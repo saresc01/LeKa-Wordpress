@@ -7,7 +7,7 @@
       <div class="row align-items-center mb-4">
         <div class="col-12 col-md-6">
           <a href="index.html">
-            <img src="img/LekaLogoWhite.png" alt="Le Ka Logo" class="footer-logo">
+            <img src="<?php echo get_template_directory_uri(); ?>/original/img/LekaLogoWhite.png" alt="Le Ka Logo" class="footer-logo">            
           </a>
         </div>
       </div>
@@ -17,11 +17,11 @@
         <!-- Left: Links and Button -->
         <div class="col-md-8 mb-4">
           <div class="footer-links d-flex flex-wrap gap-3">
-            <a href="men.html" class="footer-link">For Men</a>
-            <a href="women.html" class="footer-link">For Women</a>
-            <a href="pricing.html" class="footer-link">Pricing</a>
-            <a href="about.html" class="footer-link">About Us</a>
-            <a href="about.html" class="footer-link">Contacts</a>
+            <a href="<?php echo esc_url(get_permalink(get_page_by_path("men"))); ?>" class="footer-link">For Men</a>
+            <a href="<?php echo esc_url(get_permalink(get_page_by_path("women"))); ?>" class="footer-link">For Women</a>
+            <a href="<?php echo esc_url(get_permalink(get_page_by_path("pricing"))); ?>" class="footer-link">Pricing</a>
+            <a href="<?php echo esc_url(get_permalink(get_page_by_path("contacts"))); ?>" class="footer-link">About Us</a>
+            <a href="<?php echo esc_url(get_permalink(get_page_by_path("contacts"))); ?>" class="footer-link">Contacts</a>
           </div>
         </div>
 
