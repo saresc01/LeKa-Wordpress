@@ -10,9 +10,7 @@
         <?php while(have_posts()): the_post(); ?>
             <?php
             $title_women_page = get_field("title_women_page");
-            $description_women_page = get_field("description_women_page");
-            $img_women_page = get_field("img_women_page");
-            $text_img_women_page = get_field("text_img_women_page");
+            $description_women_page = get_field("description_women_page");                        
             ?>
 
             <div class="container py-5">
@@ -20,13 +18,30 @@
                     <!-- Img -->
                     <div class="col-md-7 order-2 order-md-1">
                         <div class="project-sidebar">
-                            
-                            <figure class="portfolio-item">
-                                <img src="<?php echo $img_women_page["url"]; ?>" alt=""class="portfolio-img">
-                                <h3 class="portfolio-caption"><?php echo $text_img_women_page; ?></h3>
-                            </figure>     
-                                            
-                        </div>
+
+                            <?php $imgWomenPictureLoop = new WP_Query(array(
+                                    "post_type" => "picture-women-page",
+                                    "posts_per_page" => -1
+                                )); ?>
+                                
+                                    <?php if($imgWomenPictureLoop->have_posts()): ?>
+                                        <?php while($imgWomenPictureLoop->have_posts()): $imgWomenPictureLoop->the_post(); ?>
+
+                                            <?php                                      
+                                            $img_women_page = get_field("img_women_page");
+                                            $text_img_women_page = get_field("text_img_women_page");         
+                                            ?>                                
+
+                                            <figure class="portfolio-item">
+                                                <img src="<?php echo $img_women_page["url"]; ?>" alt=""class="portfolio-img">
+                                                <h3 class="portfolio-caption"><?php echo $text_img_women_page; ?></h3>
+                                            </figure>  
+
+                                        <?php endwhile;?>
+                                        <?php wp_reset_postdata(); ?>
+                                    <?php endif; ?> 
+                                                
+                            </div>
                     </div>
 
                     <!-- Text -->

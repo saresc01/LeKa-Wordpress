@@ -10,9 +10,7 @@
         <?php while(have_posts()): the_post(); ?>
             <?php
             $title_men_page = get_field("title_men_page");
-            $description_men_page = get_field("description_men_page");
-            $img_women_page = get_field("img_men_page");
-            $text_img_men_page = get_field("text_img_men_page");
+            $description_men_page = get_field("description_men_page");       
             ?>
 
             <div class="container py-5">
@@ -20,11 +18,28 @@
                     <!-- Img -->
                     <div class="col-md-7 order-2 order-md-1">
                         <div class="project-sidebar">
+
+                            <?php $imgMenPictureLoop = new WP_Query(array(
+                                "post_type" => "picture-men-page",
+                                "posts_per_page" => -1
+                            )); ?>
                             
-                            <figure class="portfolio-item">
-                                <img src="<?php echo $img_men_page["url"]; ?>" alt=""class="portfolio-img">
-                                <h3 class="portfolio-caption"><?php echo $text_img_men_page; ?></h3>
-                            </figure>     
+                                <?php if($imgMenPictureLoop->have_posts()): ?>
+                                    <?php while($imgMenPictureLoop->have_posts()): $imgMenPictureLoop->the_post(); ?>
+
+                                        <?php                                      
+                                        $img_men_page = get_field("img_men_page");
+                                        $text_img_men_page = get_field("text_img_men_page");         
+                                        ?>                                
+
+                                        <figure class="portfolio-item">
+                                            <img src="<?php echo $img_men_page["url"]; ?>" alt=""class="portfolio-img">
+                                            <h3 class="portfolio-caption"><?php echo $text_img_men_page; ?></h3>
+                                        </figure>  
+
+                                    <?php endwhile;?>
+                                    <?php wp_reset_postdata(); ?>
+                                <?php endif; ?> 
                                             
                         </div>
                     </div>
