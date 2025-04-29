@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Ka Project</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="/img/favicon.ico" />
+</head>
+
+<body>
+    <!--NAVIGATION BAR-->
+    <nav class="navbar navbar-expand-lg py-1">
+        <div class="container"> <!--container-fluid)-->
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="img/LekaLogoWhite.png" alt="Le Ka Logo" style="height: 70px;">
+            </a>
+            <!-- Mobil version -->
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar content, right -->
+            <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                <ul class="navbar-nav mb-2 mb-lg-0 gap-4">
+                    <li class="nav-item"><a class="nav-link" href="men.html">For Men</a></li>
+                    <li class="nav-item"><a class="nav-link" href="women.html">For Woman</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--END NAVIGATION BAR-->
+
+    <section>
+        <div class="container section-first">
+        </div>
+    </section>
+
+    <!--PORTFOLIO MEN-->
+    <div class="container py-5">
+        <div class="row">
+            <!-- Columna de imágenes -->
+            <div class="col-md-7 order-2 order-md-1">
+                <div class="project-sidebar">
+                    <!-- images-->
+                    <figure class="portfolio-item">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp" alt=""
+                            class="portfolio-img">
+                        <h3 class="portfolio-caption">Suits</h3>
+                    </figure>
+                    <figure class="portfolio-item">
+                        <img src="img/place.png" alt="" class="portfolio-img">
+                        <h3 class="portfolio-caption">Shirts</h3>
+                    </figure>
+                    <figure class="portfolio-item">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp" alt=""
+                            class="portfolio-img">
+                        <h3 class="portfolio-caption">Coats</h3>
+                    </figure>
+                    <figure class="portfolio-item">
+                        <img src="img/place.png" alt="" class="portfolio-img">
+                        <h3 class="portfolio-caption">Chino</h3>
+                    </figure>
+                    <figure class="portfolio-item">
+                        <img src="img/insta-item4.jpg" alt="" class="portfolio-img">
+                        <h3 class="portfolio-caption">Jeans</h3>
+                    </figure>
+                </div>
+            </div>
+
+            <!-- Columna de texto -->
+            <div class="col-md-5 order-1 order-md-2">
+                <div class="sticky-top pt-4" style="top: var(--navbar-height);">
+                    <h1>Made-to-Measure for Men</h1>
+                    <p>Made-to-measure at Le Ka is built around you — your proportions, your preferences, your pace.
+                        Whether it's for work, a special event, or everyday wear, each piece is cut and crafted to bring
+                        comfort, confidence, and longevity.
+                    <p>Explore our full collection for men:</p>
+                    <ul>
+                        <li>Tailored suits for timeless elegance </li>
+                        <li>Shirts made to fit just right — no pulling, no excess</li>
+                        <li>Coats designed to layer well and last</li>
+                        <li>Chinos that move easily between casual and smart</li>
+                        <li>Jeans with the feel of denim, tailored like trousers </li>
+                    </ul>
+                    <p>
+                        Everything is made-to-order and adjusted by hand in the atelier, using high-quality fabrics and
+                        a detail-first process.
+                    </p>
+                    <div>
+                        <a href="#" class="btn-primary btn">Book a Consultation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-main pt-5 pb-4">
+        <div class="container">
+            <!-- Logo -->
+            <div class="row align-items-center mb-4">
+                <div class="col-12 col-md-6">
+                    <a href="index.html">
+                        <img src="img/LekaLogoWhite.png" alt="Le Ka Logo" class="footer-logo">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Second row, links and newsletter -->
+            <div class="row">
+                <!-- Left: Links and Button -->
+                <div class="col-md-8 mb-4">
+                    <div class="footer-links d-flex flex-wrap gap-3">
+                        <a href="men.html" class="footer-link">For Men</a>
+                        <a href="women.html" class="footer-link">For Women</a>
+                        <a href="pricing.html" class="footer-link">Pricing</a>
+                        <a href="about.html" class="footer-link">About Us</a>
+                        <a href="about.html" class="footer-link">Contacts</a>
+                    </div>
+                </div>
+
+                <!-- Right: Newsletter Form -->
+                <div class="col-md-4 mb-4">
+                    <p class="footer-text">Get the freshest news from us</p>
+                    <form class="footer-form d-flex flex-column flex-sm-row gap-2">
+                        <input type="email" class="footer-input" placeholder="Your email address" required>
+                        <button type="submit" class="btn-third">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Bottom Line -->
+            <div class="footer-bottom d-flex justify-content-between align-items-center">
+                <div class="footer-links-bottom">
+                    <a href="#" class="footer-link">Terms & Conditions</a>
+                    <div class="vr vr-footer"></div>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                </div>
+                <div class="footer-rights">
+                    © 2025 Le Ka Project. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Scripts-->
+    <!-- Bootstrap JS Bundle (incluye Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
