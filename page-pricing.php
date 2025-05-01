@@ -80,8 +80,35 @@
         <!--END ADD + button-->
 
         <!--PROCESS-->
-        <?php get_template_part("template-parts/process"); ?>
-        <!--END PROCESS-->
+        <?php 
+        $process_section_title = get_field("process_section_title");
+        $process_section_text = get_field("process_section_text");
+        ?>
+
+            <!--THE PROCESS-->
+            <section class="section-process" id="process">
+                <div class="container">
+                    <div class="row">
+                        <!--Text-->
+                        <div class="col-md-6 pe-4">
+                            <h2><?php echo $process_section_title; ?></h2>
+                            <p><?php echo $process_section_text; ?></p>
+                            <a href="#" class="btn btn-primary mt-4">Book a Consultation</a>
+                        </div>
+
+                        <!--List with icons-->
+                        <div class="col-md-6 px-3">
+                            <div class="timeline">
+                                <!--PROCESS ITEMS-->
+                                <?php get_template_part("template-parts/process"); ?>   
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--END PROCESS-->
+            
 
             
     <?php the_content(); ?>

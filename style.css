@@ -358,77 +358,6 @@ footer {
   color: var(--c-white);
 }
 
-/* Section: MEN AND WOMAN , MAIN PAGE-----------------------------------------------------------------------------------------------------------------------------*/
-/* .men-women {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-.img-horiz {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-style: none;
-  height: 100%;
-  aspect-ratio: 16 / 9;
-}
-
-.text-2 {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.text-3 {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.half-text {
-  padding: 20px;
-}
-
-.desc {
-  padding: 20px;
-}
-
-.top h2 {
-  font-size: 2rem;
-  margin: 10px 0;
-}
-
-.absolute p {
-  font-size: 1rem;
-}
-
-.discover-entry {
-  position: relative;
-  margin-bottom: 3em;
-}
-
-.discover-entry .text-wrapper {
-  width: 100%;
-}
-
-.discover-entry .one-half {
-  width: 60%;
-}
-
-.discover-entry .half-text h2 {
-  font-size: 80px;
-}
-
-.discover-entry .half-text h2 a {
-  color: var(--c-black);
-  border-bottom: 3px solid var(--c-black);
-}
-
-.discover-entry .desc {
-  width: 100%;
-  position: relative;
-} */
-
 .section-men-main {
   margin-top: 1rem;
   padding: 1rem 0;
@@ -547,6 +476,12 @@ footer {
 .timeline-step:last-child .timeline-line {
   display: none;
 }
+
+.icon-image {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;  
+} /*nuevo desde wordpress*/
 
 /*Section: ABOUT, MAIN PAGE------------------------------------------------------------------------------------------------------------------------------------*/
 

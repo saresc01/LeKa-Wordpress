@@ -86,7 +86,6 @@
                                     <div class="py-4 px-3">
                                         <div class="icon-wrapper mb-3">                                
                                         <img src="<?php echo esc_url($item['icon']['url']); ?>" alt="" style="height: 50px;">
-
                                         </div>
                                         <h4><?php echo esc_html($item['title']); ?></h4>
                                         <p><?php echo esc_html($item['text']); ?></p>
