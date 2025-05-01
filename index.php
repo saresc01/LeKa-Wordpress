@@ -66,8 +66,7 @@
                 </div>
               </div>
             </div>
-          </div>
-          
+          </div>          
 
           <div class="container px-0 discover-entry">
             <div class="row no-gutters d-md-flex justify-content-end text-wrapper">
@@ -80,19 +79,17 @@
                     <div class="top">
                       <h1 class="mb-4"><?php echo $title_women; ?></h1>
                     </div>
-                    <div class="absolute">
+                    <div class="absolute col-lg-6">
                       <p><?php echo $text_women; ?></p>
-                      <p>We design made-to-measure suits and coats for women who value comfort, confidence, and timeless
-                        style.Borramee
-                        Each socorropiece is created in our atelier in Toulouse, crafted to reflect your shape, your taste, and your
-                        lifestyle.<?php echo $text_women; ?></p>                        
+                                              
                       <p><a href="women.html" class="btn-secondary">Discover now</a></p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>          
+          </div> 
+                   
         </section>
         <!--END FOR MEN-WOMEN SECTION-->    
 
@@ -239,21 +236,6 @@
                 </a>
             </div>
         </section>
-
-
-
-      
-      
-
-        
-          
-          
-
-
-
-
-
-
 
     <?php the_content(); ?>
     <?php endwhile; else: endif; ?>  
