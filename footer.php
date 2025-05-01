@@ -52,6 +52,19 @@
   <!--Scripts-->
   <!-- Bootstrap JS Bundle (incluye Popper) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Activar swipe para carouseles -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const carousels = document.querySelectorAll('.carousel');
+    carousels.forEach(function (carouselEl) {
+      new bootstrap.Carousel(carouselEl, {
+        interval: 5000,
+        touch: true,
+        ride: 'carousel'
+      });
+    });
+  });
+  </script>
 
 </body>
 

@@ -21,6 +21,9 @@
           $about_title = get_field("about_title");
           $about_text = get_field("about_text");
           $about_video = get_field("about_video");
+
+          $add_img = get_field("add_img");
+          $add_text = get_field("add_text");
           ?>
       
           <!-- HERO SECTION -->
@@ -138,7 +141,7 @@
                 </div>
                 <!--text-->
                 <div class="col-lg-7 d-flex flex-column justify-content-center">
-                  <h2><?php echo $hero_title; ?></h2>
+                  <h2><?php echo $about_title; ?></h2>
                   <p><?php echo $about_text; ?></p>
                   <a href="#" class="btn-secondary">Learn more <i class="bi bi-chevron-right ms-2"></i></a>
                 </div>
@@ -176,6 +179,50 @@
               </div>
             </section>
           <!--END PROCESS-->
+
+          <!--ADD WEDINGS-->
+          <section class="rotating-circle-section">
+            <div class="background-image-wrapper">
+              <img src="<?php echo $add_img["url"]; ?>" alt="bg place" class="background-image">
+              <div class="rotating-circle-container">
+                <svg viewBox="0 0 200 200" class="rotating-svg">
+                  <defs>
+                    <path id="circlePath" d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" />
+                  </defs>
+                  <text fill="white">
+                    <textPath xlink:href="#circlePath"><?php echo $add_text; ?></textPath>
+                  </text>
+                </svg>
+              </div>
+            </div>
+          </section>
+          <!--END ADD WEDINGS-->
+
+          <!-- OUR JOURNAL - carrousel -->          
+          <?php 
+              $journal_title = get_field("journal_title");
+              $journal_text = get_field("journal_text");            
+          ?>
+          <section class="section-spacing">
+              <div class="container">
+                  
+                <div class="row pb-3">
+                    <div class="col-md-5">
+                    <h2><?php echo $journal_title; ?></h2>
+                    </div>
+                    <div class="col-md-7">
+                    <p><?php echo $journal_text; ?></p>
+                    </div>
+                </div>
+
+                <?php get_template_part("template-parts/journal"); ?> 
+
+              </div>
+            </section>  
+          <!--END OUR JOURNAL-->
+
+        
+           
 
 
 
