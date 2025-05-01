@@ -12,8 +12,8 @@
             $text_process = get_field("text_process");          
             ?>                                
 
-            <div class="timeline-step d-flex ">
-                <div class="icon-wrapper text-center px-3">
+            <div class="timeline-step d-flex px-3">
+                <div class="icon-wrapper text-center ">
                     <img src="<?php echo esc_url($icon_process['url']); ?>" alt="" class="icon-image">
                     <div class="timeline-line"></div>
                 </div>

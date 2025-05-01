@@ -82,8 +82,8 @@ li {
 }
 
 .section-spacing {
-  margin-top: 3rem;
-  padding: 3rem 0;
+  margin-top: 2rem;
+  padding: 2rem 0;
 }
 
 /* BUTTONS--------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -403,7 +403,7 @@ footer {
 
 .discover-entry {
   position: relative;
-  margin-bottom: 7em;
+  margin-bottom: 5rem; /*1may*/
 }
 
 .discover-entry .text-wrapper {
@@ -454,17 +454,18 @@ footer {
 
 .timeline-step {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 1.5rem; /*1may*/
 }
 
 .icon-wrapper {
   min-width: 40px;
   position: relative;
+  overflow: hidden;/*1may*/
 }
 
 .timeline-line {
   position: absolute;
-  top: 40px;
+  top: 3rem; /*1may*/
   left: 50%;
   transform: translateX(-50%);
   width: 2px;
@@ -475,7 +476,7 @@ footer {
 
 .timeline-step:last-child .timeline-line {
   display: none;
-}
+}/* si quiero la ultima linea de process comentar*/
 
 .icon-image {
   width: 40px;
@@ -899,6 +900,8 @@ footer {
   object-fit: cover;
 }
 
+
+
 .portrait-aproach {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   object-fit: cover;
@@ -1054,10 +1057,10 @@ footer {
     padding-left: auto !important;
   }
 
-  .row {
+ /* .row {
     margin-left: 0;
-    /*forzado imagen men woman*/
-  }*/
+    /*forzado imagen men woman
+  }*//*1may*/
 
   .pt-5 {
     padding: 2rem !important;
@@ -1256,6 +1259,8 @@ footer {
       .portrait-image {
         margin-bottom: 3rem;
       }
+
+      
     }
   }
 
@@ -1385,6 +1390,14 @@ footer {
 
     .col-6 {
       width: 50%;
+    }
+
+    .instagram {
+      margin-top: 1rem;
+    }
+
+    .mb-4{
+      margin-bottom: 0.5rem !important;
     }
   }
 
