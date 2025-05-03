@@ -13,20 +13,12 @@ function leka_load_stylesheets() {
     wp_enqueue_style('custom-style', get_template_directory_uri() . '/style.css');
     
     //Favicon
-    wp_enqueue_style('favicon', get_template_directory_uri() . '/img/favicon.ico');
-
-    
+    wp_enqueue_style('favicon', get_template_directory_uri() . '/img/favicon.ico');    
 }
 add_action('wp_enqueue_scripts', 'leka_load_stylesheets');
-
-//function leka_load_scripts() {    
- //   wp_enqueue_script('bootstrap-bundle', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js', array('jquery'), null, true);
-//}
-//add_action('wp_enqueue_scripts', 'leka_load_scripts');
 
 function leka_remove_gutenberg() {    
     remove_post_type_support('post', 'editor');
     remove_post_type_support('page', 'editor');
 }
-
 add_action('init', 'leka_remove_gutenberg');

@@ -86,7 +86,7 @@ li {
   padding: 2rem 0;
 }
 
-/* BUTTONS--------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* BUTTONS-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .btn-primary {
   background-color: var(--c-brand-1);
   color: var(--c-white);
@@ -166,8 +166,8 @@ li {
   color: var(--c-white);
 }
 
-/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/* NAVBAR----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* NAVBAR----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .navbar {
   position: fixed;
   width: 100%;
@@ -201,7 +201,7 @@ li {
   box-shadow: none;
 }
 
-/*FOOTER--------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*FOOTER---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 footer {
   background-color: var(--c-brand-3);
 }
@@ -215,7 +215,7 @@ footer {
   color: var(--c-white);
   text-decoration: none;
   margin-right: 0.75rem;
-  /* Ajustamos el espacio entre los enlaces */
+  /* Space between links */
 }
 
 .footer-link:hover {
@@ -324,7 +324,7 @@ footer {
   width: 100%;
   height: 100%;
   z-index: -1;
-  /* Asegura que el video quede en el fondo */
+  /*Video in background*/
 }
 
 .video-background-content {
@@ -403,7 +403,7 @@ footer {
 
 .discover-entry {
   position: relative;
-  margin-bottom: 5rem; /*1may*/
+  margin-bottom: 5rem;
 }
 
 .discover-entry .text-wrapper {
@@ -454,18 +454,18 @@ footer {
 
 .timeline-step {
   position: relative;
-  margin-bottom: 1.5rem; /*1may*/
+  margin-bottom: 1.5rem;
 }
 
 .icon-wrapper {
   min-width: 40px;
   position: relative;
-  overflow: hidden;/*1may*/
+  overflow: hidden;
 }
 
 .timeline-line {
   position: absolute;
-  top: 3rem; /*1may*/
+  top: 3rem; 
   left: 50%;
   transform: translateX(-50%);
   width: 2px;
@@ -484,10 +484,9 @@ footer {
   object-fit: contain;  
 } /*nuevo desde wordpress*/
 
-/*Section: ABOUT, MAIN PAGE------------------------------------------------------------------------------------------------------------------------------------*/
+/*Section: ABOUT, MAIN PAGE------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-
-/* Section: FaQs , MAIN PAGE---------------------------------------------------------------------------------------------------------------------------------- */
+/* Section: FaQs , MAIN PAGE------------------------------------------------------------------------------------------------------------------------------------------ */
 .section-faqs {
   margin-top: 3rem;
   padding: 3rem 0;
@@ -523,7 +522,7 @@ footer {
   box-shadow: none;
 }
 
-/*flechas*/
+/*arrows*/
 .accordion-faqs-button i {
   align-items: end;
   transition: transform 0.3s ease;
@@ -549,7 +548,6 @@ footer {
   font-size: var(--fs-body);
   color: var(--c-black);
 }
-
 
 /* Section: ADD WEDDING, MAIN PAGE  ----------------------------------------------------------------------------------------------------------------------------- */
 .rotating-circle-section {
@@ -606,7 +604,7 @@ footer {
   }
 }
 
-/* Section: OUR JOURNAL, MAIN PAGE------------------------------------------------------------------------------------------------------------------------------*/
+/* Section: OUR JOURNAL, MAIN PAGE-----------------------------------------------------------------------------------------------------------------------------------------*/
 #journalCarousel .carousel-item {
   height: 500px;
   /* MOVIL AND TABLETS*/
@@ -620,11 +618,9 @@ footer {
   object-position: center center;
 }
 
+/* SECTION: TESTIMONIALS, MAIN PAGE --------------------------------------------------------------------------------------------------------------------------------------- */
 
-/* SECTION: TESTIMONIALS, MAIN PAGE -------------------------------------------------------------------------------------------------------------------------- */
-
-
-/* SECTION: WHERE, MAIN PAGE --------------------------------------------------------------------------------------------------------------------------------- */
+/* SECTION: WHERE, MAIN PAGE ---------------------------------------------------------------------------------------------------------------------------------------------- */
 .contact-img {
   max-height: 600px;
   width: 100%;
@@ -644,12 +640,17 @@ footer {
   color: var(--c-cta);
 }
 
-/* SECTION: INSTAGRAM, MAIN PAGE------------------------------------------------------------------------------------------------------------------------------ */
+.section-location {
+  margin-top: 3rem;
+  padding: 1rem 0;
+}
+
+/* SECTION: INSTAGRAM, MAIN PAGE--------------------------------------------------------------------------------------------------------------------------------------------------- */
 .instagram {
   margin-bottom: -1rem;
   margin-top: 2rem;
   overflow-x: auto;
-  /* Permite scroll horizontal si es necesario */
+  /* Permite scroll horizontal*/
 }
 
 .instagram .row {
@@ -684,7 +685,6 @@ footer {
   transition: 0.6s ease-out;
 }
 
-
 /* Section: PORTFOLIO MEN AND WOMEN , SUBPAGE MEN AND WOMEN------------------------------------------------------------------------------------------------------------------------------------*/
 .portfolio-img {
   max-width: 100%;
@@ -716,7 +716,6 @@ footer {
   color: var(--c-white);
   border-radius: 0;
 }
-
 
 /* Section: COST (FIT), SUBPAGE: PRICING ------------------------------------------------------------------------------------------------------------------------------*/
 .accordion-button {
@@ -894,13 +893,11 @@ footer {
   z-index: 2;
 }
 
-/*Section: PORTRAIT, SUBPAGE: ABOUT US-----------------------------------------------------------------------------------------------------------------------*/
+/*Section: PORTRAIT, SUBPAGE: ABOUT US-----------------------------------------------------------------------------------------------------------------------------------------*/
 .portrait-image {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   object-fit: cover;
 }
-
-
 
 .portrait-aproach {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -917,7 +914,7 @@ footer {
   padding: 1rem 0;
 }
 
-/*section: CARE, SUBPAGE: ABOUT US--------------------------------------------------------------------------------------------------------------------------*/
+/*section: CARE, SUBPAGE: ABOUT US-------------------------------------------------------------------------------------------------------------------------------------------------*/
 .section-care {
   background-color: var(--c-l-grey);
   padding-top: 5rem;
@@ -929,9 +926,9 @@ footer {
   padding-top: 2rem;
 }
 
-/*section: MY APPROACH, SUBPAGE: ABOUT US-------------------------------------------------------------------------------------------------------------------*/
+/*Section: MY APPROACH, SUBPAGE: ABOUT US---------------------------------------------------------------------------------------------------------------------------------------*/
 
-/*section: FORM, SUBPAGE: CONTACTS-------------------------------------------------------------------------------------------------------------------------*/
+/*section: FORM, SUBPAGE: CONTACTS-------------------------------------------------------------------------------------------------------------------------------------------------*/
 .consultation {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -1016,7 +1013,7 @@ footer {
   color: var(--c-brand-1);
 }
 
-/*section: ADD, SUBPAGE: CONTACTS-------------------------------------------------------------------------------------------------------------------------*/
+/*section: ADD, SUBPAGE: CONTACTS--------------------------------------------------------------------------------------------------------------------------------------------------*/
 .rotating-two-section {
   background-color: var(--c-black);
 }
@@ -1024,25 +1021,21 @@ footer {
 
 
 
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------Mobile Version-------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-
-
-
-
-
-/* Mobile Version ------------------------------------------------------------------------ */
 @media (max-width: 991.98px) {
-
   /* BASIC STYLES ----------------------------------------------------------------------- */
   .section-spacing {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    padding: 1rem;
+    padding: 0rem;
   }
 
   .btn-primary {
     margin-bottom: 2rem;
-    /*width: 100%;  /*comentar si quiero que los botones sigan siendo como en el ordenador*/
+    width: 100%;  /*remove or coment if I want the buttons like in desktop version and not full width*/
   }
 
   .img {
@@ -1053,14 +1046,13 @@ footer {
     max-width: 92%;
   }
 
-  .container.px-0 {
-    padding-left: auto !important;
+  .section-location .container {
+    position: relative; 
   }
-
- /* .row {
-    margin-left: 0;
-    /*forzado imagen men woman
-  }*//*1may*/
+  
+  .row-men-women {
+    margin-left: 0;    
+  }
 
   .pt-5 {
     padding: 2rem !important;
@@ -1167,11 +1159,7 @@ footer {
     text-align: center;
     padding: 0rem;
   }
-
-  /*.desc {
-    padding: 15px;
-  }*/
-
+  
   .top h2 {
     font-size: 1.5rem;
   }
@@ -1182,6 +1170,11 @@ footer {
 
   .discover-entry .one-half {
     width: 100%;
+  }
+
+  .discover-entry {
+    position: relative;
+    margin-bottom: 1rem; 
   }
 
   .discover-entry .half-text h2 {
@@ -1248,8 +1241,13 @@ footer {
     padding-top: 1rem;
   }
 
-  /*subpage contact us*/
+  /*subpage contact us----------------------------------*/
   .section-personal {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0rem;
+  }
+  .section-location {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     padding: 0rem;
@@ -1258,9 +1256,7 @@ footer {
     @media (max-width: 767.98px) {
       .portrait-image {
         margin-bottom: 3rem;
-      }
-
-      
+      }      
     }
   }
 
@@ -1433,6 +1429,7 @@ footer {
 
     .contact-img {
       margin-bottom: 2rem;
+      width: 100%;
     }
 
     .contact-info .d-flex {

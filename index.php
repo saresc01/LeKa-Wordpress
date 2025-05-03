@@ -48,7 +48,7 @@
         <!--FOR MEN-WOMEN SECTION-->
         <section class="men-women">
           <div class="container px-0 discover-entry">
-            <div class="row no-gutters d-md-flex justify-content-start text-wrapper">
+            <div class="row no-gutters d-md-flex justify-content-start text-wrapper row-men-women">
               <!--imagen-->
               <div class="col-md-7 img-horiz" style="background-image: url('<?php echo $img_men["url"]; ?>');"></div>
               <!--text-->
@@ -69,7 +69,7 @@
           </div>          
 
           <div class="container px-0 discover-entry">
-            <div class="row no-gutters d-md-flex justify-content-end text-wrapper">
+            <div class="row no-gutters d-md-flex justify-content-end text-wrapper row-men-women">
               <!--imagen-->
               <div class="col-md-7 img-horiz" style="background-image: url('<?php echo $img_women["url"]; ?>');"></div>
               <!--text-->
