@@ -5,6 +5,17 @@
         </div>
     </section>
 
+
+
+
+
+
+
+
+
+
+
+
     <!--COST -->
     <?php if(have_posts()): ?>
         <?php while(have_posts()): the_post(); ?>
@@ -43,18 +54,19 @@
                                     <div class="accordion-item">
                                         <h3 class="accordion-header" id="process-heading-<?php echo $post_id; ?>">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#process-collapse-<?php echo $post_id; ?>" aria-expanded="false"
+                                                data-bs-target="#process-collapse-<?php echo $post_id; ?>" aria-expanded="false" 
                                                 aria-controls="process-collapse-<?php echo $post_id; ?>">
-                                                <?php echo esc_html($item_title); ?>
+                                                <?php echo $item_title; ?>                                                
                                             </button>
                                         </h3>
+
                                         <div id="process-collapse-<?php echo $post_id; ?>" class="accordion-collapse collapse"
                                             aria-labelledby="process-heading-<?php echo $post_id; ?>" data-bs-parent="#accordionFit">
                                             <div class="accordion-body">
-                                                <?php echo esc_html($item_price); ?>
+                                                <?php echo $item_price; ?>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>                             
 
                                 <?php endwhile; ?>
                                 <?php wp_reset_postdata(); ?>
@@ -67,6 +79,18 @@
             </div>
         </section>
         <!--END COST-->
+        
+        
+
+
+
+
+
+
+
+
+
+
 
         <!--ADD + button-->
         <section class="cta-section">

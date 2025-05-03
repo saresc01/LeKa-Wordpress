@@ -19,10 +19,10 @@ function leka_load_stylesheets() {
 }
 add_action('wp_enqueue_scripts', 'leka_load_stylesheets');
 
-function leka_load_scripts() {    
-    wp_enqueue_script('bootstrap-bundle', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js', array('jquery'), null, true);
-}
-add_action('wp_enqueue_scripts', 'leka_load_scripts');
+//function leka_load_scripts() {    
+ //   wp_enqueue_script('bootstrap-bundle', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js', array('jquery'), null, true);
+//}
+//add_action('wp_enqueue_scripts', 'leka_load_scripts');
 
 function leka_remove_gutenberg() {    
     remove_post_type_support('post', 'editor');
