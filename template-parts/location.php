@@ -49,7 +49,7 @@
             <div>
               <h4><?php echo $street_title; ?></h4>
               <p><?php echo $street; ?></p>
-              <p><a href="#" class="btn-secondary">Get direction</a></p>
+              <!-- <p><a href="#" class="btn-secondary">Get direction</a></p> -->
             </div>
           </div>
         </div>

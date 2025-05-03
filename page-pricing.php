@@ -5,17 +5,6 @@
         </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
     <!--COST -->
     <?php if(have_posts()): ?>
         <?php while(have_posts()): the_post(); ?>
@@ -29,12 +18,12 @@
             <div class="container ">
                 <div class="row">
                     <!--Text-->
-                    <div class="col-md-5 ">
+                    <div class="col-md-6 ">
                         <h2><?php echo $title_cost; ?></h2>
                         <p><?php echo $text_cost; ?></p>
                     </div>
                     <!--ACCORDION -->
-                    <div class="col-md-7 mb-4">
+                    <div class="col-md-6 mb-4">
                         <div class="accordion accordion-flush" id="accordionFit">
 
                             <?php $priceLoop = new WP_Query(array(
@@ -79,18 +68,6 @@
             </div>
         </section>
         <!--END COST-->
-        
-        
-
-
-
-
-
-
-
-
-
-
 
         <!--ADD + button-->
         <section class="cta-section">
@@ -114,7 +91,7 @@
                 <div class="container">
                     <div class="row">
                         <!--Text-->
-                        <div class="col-md-6 pe-4">
+                        <div class="col-md-6 pe-5">
                             <h2><?php echo $process_section_title; ?></h2>
                             <p><?php echo $process_section_text; ?></p>
                             <a href="#" class="btn btn-primary mt-4">Book a Consultation</a>

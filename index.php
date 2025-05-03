@@ -104,7 +104,7 @@
             <div class="container">
                 <div class="row">
                     <!--Text-->
-                    <div class="col-md-6 pe-4">
+                    <div class="col-md-6 pe-5">
                         <h2><?php echo $process_section_title; ?></h2>
                         <p><?php echo $process_section_text; ?></p>
                         <a href="#" class="btn btn-primary mt-4">Book a Consultation</a>
