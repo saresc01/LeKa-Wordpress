@@ -18,7 +18,7 @@
             <div class="container ">
                 <div class="row">
                     <!--Text-->
-                    <div class="col-md-6 ">
+                    <div class="col-md-6 cost-space">
                         <h2><?php echo $title_cost; ?></h2>
                         <p><?php echo $text_cost; ?></p>
                     </div>
@@ -91,10 +91,10 @@
                 <div class="container">
                     <div class="row">
                         <!--Text-->
-                        <div class="col-md-6 pe-5">
+                        <div class="col-md-6 process-space">
                             <h2><?php echo $process_section_title; ?></h2>
                             <p><?php echo $process_section_text; ?></p>
-                            <a href="#" class="btn btn-primary mt-4">Book a Consultation</a>
+                            <a href="#" class="btn btn-primary mt-4 button-process-mobile">Book a Consultation</a>
                         </div>
 
                         <!--List with icons-->

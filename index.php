@@ -104,10 +104,10 @@
             <div class="container">
                 <div class="row">
                     <!--Text-->
-                    <div class="col-md-6 pe-5">
+                    <div class="col-md-6 process-space">
                         <h2><?php echo $process_section_title; ?></h2>
                         <p><?php echo $process_section_text; ?></p>
-                        <a href="#" class="btn btn-primary mt-4">Book a Consultation</a>
+                        <a href="#" class="btn btn-primary mt-4 button-process-mobile">Book a Consultation</a>
                     </div>
 
                     <!--List with icons-->
@@ -204,7 +204,7 @@
           <div class="container">
               
             <div class="row pb-3">
-                <div class="col-md-5">
+                <div class="col-md-5 title-journal">
                 <h2><?php echo $journal_title; ?></h2>
                 </div>
                 <div class="col-md-7">
@@ -220,6 +220,7 @@
 
     
         <!--TESTIMONIALS-->
+
         <!--END TESTIMONIALS-->
 
         <!--WHERE-->
@@ -231,7 +232,7 @@
             <?php get_template_part("template-parts/instagram"); ?>
 
             <div class="d-flex justify-content-center w-100 position-absolute bottom-0 z-1">
-                <a href="https://www.instagram.com/le_ka_toulouse/?hl=es" target="_blank" class="btn btn-primary">
+                <a href="https://www.instagram.com/le_ka_toulouse/?hl=es" target="_blank" class="btn btn-primary btn-instagram">
                     Follow us on Instagram
                 </a>
             </div>

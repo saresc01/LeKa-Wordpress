@@ -1,11 +1,11 @@
 <?php wp_footer(); ?>
 
 <!-- Footer -->
-<footer class="bg-main pt-5 pb-4">
-    <div class="container">
+<footer class="bg-main pt-5 pb-4 footer-section">
+    <div class="container footer-container">
       <!-- Logo -->
-      <div class="row align-items-center mb-4">
-        <div class="col-12 col-md-6">
+      <div class="row mb-4">
+        <div class="col-12 col-md-6 footer-container">
           <a href="index.html">
             <img src="<?php echo get_template_directory_uri(); ?>/original/img/LekaLogoWhite.png" alt="Le Ka Logo" class="footer-logo">            
           </a>
