@@ -22,3 +22,4 @@ function leka_remove_gutenberg() {
     remove_post_type_support('page', 'editor');
 }
 add_action('init', 'leka_remove_gutenberg');
+
