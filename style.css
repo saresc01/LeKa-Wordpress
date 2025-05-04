@@ -202,7 +202,6 @@ li {
 }
 
 
-
 /*FOOTER---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 footer {
   background-color: var(--c-brand-3);
@@ -221,6 +220,17 @@ footer {
 }
 
 .footer-link:hover {
+  color: var(--c-white);
+  text-decoration: none;
+}
+
+.footer-link-name {
+  color: var(--c-grey);
+  text-decoration: none;
+  margin-right: 0rem; 
+}
+
+.footer-link-name:hover {
   color: var(--c-white);
   text-decoration: none;
 }
