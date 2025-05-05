@@ -10,10 +10,11 @@
             $presentation_title = get_field("presentation_title");
             $presentation_text = get_field("presentation_text");
             $presentation_img = get_field("presentation_img");
+            $care_section_title = get_field("care_section_title");
             $approach_title = get_field("approach_title");
             $approach_text = get_field("approach_text");
             $approach_img = get_field("approach_img");
-            $care_section_title = get_field("care_section_title");
+            $approach_btn = get_field("approach_btn");            
             ?>
 
             <!--PRESENTATION-->
@@ -86,7 +87,6 @@
                                     <div class="py-4 px-3">
                                         <div class="icon-wrapper mb-3">                                
                                         <img src="<?php echo esc_url($item['icon']['url']); ?>" alt="" style="height: 50px;">
-
                                         </div>
                                         <h4><?php echo esc_html($item['title']); ?></h4>
                                         <p><?php echo esc_html($item['text']); ?></p>
@@ -98,8 +98,7 @@
 
                 </div>
             </section>
-            <!--END SECTION CARE-->
-           
+            <!--END SECTION CARE-->           
 
             <!--APPROACH-->
             <section class="section-aproach">
@@ -110,7 +109,7 @@
                             <div class="px-">
                                 <h2><?php echo $approach_title; ?></h2>
                                 <p><?php echo $approach_text; ?></p>
-                                <a href="#" class="btn-primary btn">Book a Consultation</a>
+                                <a href="<?php echo esc_url(get_permalink(get_page_by_path("contacts"))); ?>" class="btn-primary btn"><?php echo $approach_btn; ?></a>
                             </div>
                         </div>
                         <!-- Img -->
@@ -120,11 +119,9 @@
                     </div>
                 </div>
             </section>
-            <!--END APPROACH-->            
-
+            <!--END APPROACH--> 
 
     <?php the_content(); ?>
     <?php endwhile; else: endif; ?>
-
 
 <?php get_footer() ?>

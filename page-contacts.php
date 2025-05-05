@@ -10,12 +10,17 @@
             $contact_page_title = get_field("contact_page_title");
             $contact_img = get_field("contact_img");
             $contact_text = get_field("contact_text");
+            $phone_title = get_field("phone_title");
             $contact_phone = get_field("contact_phone");
+            $email_title = get_field("email_title");
             $contact_email = get_field("contact_email");
+            $address_title = get_field("address_title");
             $contact_address = get_field("contact_address");
             $consultation_form = get_field("consultation_form");
             $facebook = get_field("facebook");
             $instagram = get_field("instagram");
+            $consultation_btn = get_field("consultation_btn");
+
             $circle_text_add = get_field("circle_text_add");
             $img_add_contact = get_field("img_add_contact");
             ?>
@@ -38,15 +43,15 @@
                             <div class="row">
                                 <div class="contact-info">
                                     <div class="info-row">
-                                        <div class="info-label">Phone:</div>
+                                        <div class="info-label"><?php echo $phone_title; ?></div>
                                         <div class="info-value"><?php echo $contact_phone; ?></div>
                                     </div>
                                     <div class="info-row">
-                                        <div class="info-label">Email:</div>
+                                        <div class="info-label"><?php echo $email_title; ?></div>
                                         <div class="info-value"><?php echo $contact_email; ?></div>
                                     </div>
                                     <div class="info-row">
-                                        <div class="info-label">Address:</div>
+                                        <div class="info-label"><?php echo $address_title; ?></div>
                                         <div class="info-value"><?php echo $contact_address; ?></div>
                                     </div>
                                 </div>
@@ -66,7 +71,7 @@
                             <div class="vr vr-vertical"></div>
                         </div>
 
-                        <!-- Form -->
+                        <!-- Form  check after install plugin contact form 7-->
                         <div class="col-md-5 mt-5 mt-md-0">
                             <h3 class="text-start"><?php echo $consultation_form; ?></h3>
                             <div class="contact-form mt-4">
@@ -88,7 +93,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <a href="#" class="btn btn-consultation">Book a Consultation</a>
+                                    <a href="#" class="btn btn-consultation"><?php echo $consultation_btn; ?></a>
                                 </div>
 
                             </div>
@@ -115,7 +120,6 @@
                 </div>
             </section>
             <!--END ADD-->
-
 
     <?php the_content(); ?>
     <?php endwhile; else: endif; ?>

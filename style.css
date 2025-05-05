@@ -22,7 +22,7 @@ Author: Sara Escallon
 
   --fs-h1: clamp(2.5rem, 5vw, 3.5rem);
   /*clamp=responsive 40px for mobile - 56px for desktop */
-  --fs-h2: clamp(1.75rem, 4vw, 2.25rem);
+  --fs-h2: clamp(2rem, 4vw, 2.5rem);
   /* 28px - 36px */
   --fs-h3: clamp(1.25rem, 3vw, 1.5rem);
   /* 20px - 24px */
@@ -82,11 +82,11 @@ li {
 }
 
 .section-spacing {
-  margin-top: 3rem;
-  padding: 3rem 0;
+  margin-top: 2rem;
+  padding: 2rem 0;
 }
 
-/* BUTTONS--------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* BUTTONS-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .btn-primary {
   background-color: var(--c-brand-1);
   color: var(--c-white);
@@ -116,7 +116,7 @@ li {
   font-family: var(--f-p);
   font-size: var(--fs-h4);
   font-weight: 500;
-  padding: 1em 0em;
+  padding: 0.5rem 0rem;
   border: none;
   border-radius: 0;
   text-decoration: underline;
@@ -166,8 +166,8 @@ li {
   color: var(--c-white);
 }
 
-/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/* NAVBAR----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* NAVBAR----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .navbar {
   position: fixed;
   width: 100%;
@@ -201,13 +201,14 @@ li {
   box-shadow: none;
 }
 
-/*FOOTER--------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*FOOTER---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 footer {
   background-color: var(--c-brand-3);
 }
 
 .footer-logo {
-  height: 100px;
+  height: 120px;
   margin-bottom: 2rem;
 }
 
@@ -215,10 +216,21 @@ footer {
   color: var(--c-white);
   text-decoration: none;
   margin-right: 0.75rem;
-  /* Ajustamos el espacio entre los enlaces */
+  /* Space between links */
 }
 
 .footer-link:hover {
+  color: var(--c-white);
+  text-decoration: none;
+}
+
+.footer-link-name {
+  color: var(--c-grey);
+  text-decoration: none;
+  margin-right: 0rem; 
+}
+
+.footer-link-name:hover {
   color: var(--c-white);
   text-decoration: none;
 }
@@ -324,7 +336,7 @@ footer {
   width: 100%;
   height: 100%;
   z-index: -1;
-  /* Asegura que el video quede en el fondo */
+  /*Video in background*/
 }
 
 .video-background-content {
@@ -357,77 +369,6 @@ footer {
 .hero-text {
   color: var(--c-white);
 }
-
-/* Section: MEN AND WOMAN , MAIN PAGE-----------------------------------------------------------------------------------------------------------------------------*/
-/* .men-women {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-.img-horiz {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-style: none;
-  height: 100%;
-  aspect-ratio: 16 / 9;
-}
-
-.text-2 {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.text-3 {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.half-text {
-  padding: 20px;
-}
-
-.desc {
-  padding: 20px;
-}
-
-.top h2 {
-  font-size: 2rem;
-  margin: 10px 0;
-}
-
-.absolute p {
-  font-size: 1rem;
-}
-
-.discover-entry {
-  position: relative;
-  margin-bottom: 3em;
-}
-
-.discover-entry .text-wrapper {
-  width: 100%;
-}
-
-.discover-entry .one-half {
-  width: 60%;
-}
-
-.discover-entry .half-text h2 {
-  font-size: 80px;
-}
-
-.discover-entry .half-text h2 a {
-  color: var(--c-black);
-  border-bottom: 3px solid var(--c-black);
-}
-
-.discover-entry .desc {
-  width: 100%;
-  position: relative;
-} */
 
 .section-men-main {
   margin-top: 1rem;
@@ -474,7 +415,7 @@ footer {
 
 .discover-entry {
   position: relative;
-  margin-bottom: 7em;
+  margin-bottom: 5rem;
 }
 
 .discover-entry .text-wrapper {
@@ -503,13 +444,18 @@ footer {
 .men-women {
   padding-top: 4rem;  
   margin-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 /* Section: PROCESS, MAIN PAGE ----------------------------------------------------------------------------------------------------------------------------------- */
 .section-process {
-  padding-top: 5rem;
-  padding-bottom: 2rem;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
   background-color: var(--c-l-grey);
+}
+
+.process-space {
+  padding-right: 5rem;
 }
 
 .icon-colored {
@@ -525,17 +471,20 @@ footer {
 
 .timeline-step {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 1.5rem;
+
 }
 
 .icon-wrapper {
   min-width: 40px;
   position: relative;
+  overflow: hidden;
+  margin-right: 2rem;
 }
 
 .timeline-line {
   position: absolute;
-  top: 40px;
+  top: 3rem; 
   left: 50%;
   transform: translateX(-50%);
   width: 2px;
@@ -546,14 +495,19 @@ footer {
 
 .timeline-step:last-child .timeline-line {
   display: none;
-}
+}/* si quiero la ultima linea de process comentar*/
 
-/*Section: ABOUT, MAIN PAGE------------------------------------------------------------------------------------------------------------------------------------*/
+.icon-image {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;  
+} /*nuevo desde wordpress*/
 
+/*Section: ABOUT, MAIN PAGE------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-/* Section: FaQs , MAIN PAGE---------------------------------------------------------------------------------------------------------------------------------- */
+/* Section: FaQs , MAIN PAGE------------------------------------------------------------------------------------------------------------------------------------------ */
 .section-faqs {
-  margin-top: 3rem;
+  margin-top: 5rem;
   padding: 3rem 0;
 }
 
@@ -587,7 +541,7 @@ footer {
   box-shadow: none;
 }
 
-/*flechas*/
+/*arrows*/
 .accordion-faqs-button i {
   align-items: end;
   transition: transform 0.3s ease;
@@ -613,7 +567,6 @@ footer {
   font-size: var(--fs-body);
   color: var(--c-black);
 }
-
 
 /* Section: ADD WEDDING, MAIN PAGE  ----------------------------------------------------------------------------------------------------------------------------- */
 .rotating-circle-section {
@@ -670,11 +623,15 @@ footer {
   }
 }
 
-/* Section: OUR JOURNAL, MAIN PAGE------------------------------------------------------------------------------------------------------------------------------*/
+/* Section: OUR JOURNAL, MAIN PAGE-----------------------------------------------------------------------------------------------------------------------------------------*/
 #journalCarousel .carousel-item {
   height: 500px;
   /* MOVIL AND TABLETS*/
   position: relative;
+}
+
+.title-journal{
+  padding-top: 1.5rem;
 }
 
 #journalCarousel .carousel-item img {
@@ -684,11 +641,9 @@ footer {
   object-position: center center;
 }
 
+/* SECTION: TESTIMONIALS, MAIN PAGE --------------------------------------------------------------------------------------------------------------------------------------- */
 
-/* SECTION: TESTIMONIALS, MAIN PAGE -------------------------------------------------------------------------------------------------------------------------- */
-
-
-/* SECTION: WHERE, MAIN PAGE --------------------------------------------------------------------------------------------------------------------------------- */
+/* SECTION: WHERE, MAIN PAGE ---------------------------------------------------------------------------------------------------------------------------------------------- */
 .contact-img {
   max-height: 600px;
   width: 100%;
@@ -708,16 +663,24 @@ footer {
   color: var(--c-cta);
 }
 
-/* SECTION: INSTAGRAM, MAIN PAGE------------------------------------------------------------------------------------------------------------------------------ */
+.section-location {
+  margin-top: 3rem;
+  padding: 1rem 0;
+}
+
+/* SECTION: INSTAGRAM, MAIN PAGE--------------------------------------------------------------------------------------------------------------------------------------------------- */
 .instagram {
   margin-bottom: -1rem;
   margin-top: 2rem;
   overflow-x: auto;
-  /* Permite scroll horizontal si es necesario */
+  /* Permite scroll horizontal*/
 }
 
 .instagram .row {
+  display: flex;
   flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
 }
 
 .insta-item {
@@ -744,7 +707,6 @@ footer {
   opacity: 0;
   transition: 0.6s ease-out;
 }
-
 
 /* Section: PORTFOLIO MEN AND WOMEN , SUBPAGE MEN AND WOMEN------------------------------------------------------------------------------------------------------------------------------------*/
 .portfolio-img {
@@ -778,7 +740,6 @@ footer {
   border-radius: 0;
 }
 
-
 /* Section: COST (FIT), SUBPAGE: PRICING ------------------------------------------------------------------------------------------------------------------------------*/
 .accordion-button {
   background-color: var(--c-l-grey);
@@ -789,6 +750,10 @@ footer {
   font-family: var(--f-h);
   font-size: var(--fs-h3);
   margin-bottom: 0;
+}
+
+.cost-space {     
+  padding-right: 5rem;
 }
 
 .accordion-button:focus {
@@ -955,7 +920,7 @@ footer {
   z-index: 2;
 }
 
-/*Section: PORTRAIT, SUBPAGE: ABOUT US-----------------------------------------------------------------------------------------------------------------------*/
+/*Section: PORTRAIT, SUBPAGE: ABOUT US-----------------------------------------------------------------------------------------------------------------------------------------*/
 .portrait-image {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   object-fit: cover;
@@ -976,7 +941,7 @@ footer {
   padding: 1rem 0;
 }
 
-/*section: CARE, SUBPAGE: ABOUT US--------------------------------------------------------------------------------------------------------------------------*/
+/*section: CARE, SUBPAGE: ABOUT US-------------------------------------------------------------------------------------------------------------------------------------------------*/
 .section-care {
   background-color: var(--c-l-grey);
   padding-top: 5rem;
@@ -988,9 +953,9 @@ footer {
   padding-top: 2rem;
 }
 
-/*section: MY APPROACH, SUBPAGE: ABOUT US-------------------------------------------------------------------------------------------------------------------*/
+/*Section: MY APPROACH, SUBPAGE: ABOUT US---------------------------------------------------------------------------------------------------------------------------------------*/
 
-/*section: FORM, SUBPAGE: CONTACTS-------------------------------------------------------------------------------------------------------------------------*/
+/*section: FORM, SUBPAGE: CONTACTS-------------------------------------------------------------------------------------------------------------------------------------------------*/
 .consultation {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -1075,7 +1040,7 @@ footer {
   color: var(--c-brand-1);
 }
 
-/*section: ADD, SUBPAGE: CONTACTS-------------------------------------------------------------------------------------------------------------------------*/
+/*section: ADD, SUBPAGE: CONTACTS--------------------------------------------------------------------------------------------------------------------------------------------------*/
 .rotating-two-section {
   background-color: var(--c-black);
 }
@@ -1083,25 +1048,21 @@ footer {
 
 
 
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------Mobile Version-------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
-
-
-
-
-
-/* Mobile Version ------------------------------------------------------------------------ */
 @media (max-width: 991.98px) {
-
   /* BASIC STYLES ----------------------------------------------------------------------- */
   .section-spacing {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    padding: 1rem;
+    padding: 0rem;
   }
 
   .btn-primary {
     margin-bottom: 2rem;
-    /*width: 100%;  /*comentar si quiero que los botones sigan siendo como en el ordenador*/
+    width: 100%;  /*remove or coment if I want the buttons like in desktop version and not full width*/
   }
 
   .img {
@@ -1112,14 +1073,13 @@ footer {
     max-width: 92%;
   }
 
-  .container.px-0 {
-    padding-left: auto !important;
+  .section-location .container {
+    position: relative; 
   }
-
-  .row {
-    margin-left: 0;
-    /*forzado imagen men woman*/
-  }*/
+  
+  .row-men-women {
+    margin-left: 0;    
+  }
 
   .pt-5 {
     padding: 2rem !important;
@@ -1131,6 +1091,16 @@ footer {
 
   .section-cost {
     padding: 0rem;
+    margin-bottom: 3rem;
+  }
+
+  .icon-wrapper {    
+    margin-right: 1rem;
+  }
+
+  .cost-space {       
+    padding: 1rem;
+
   }
 
   /* NAVBAR ---------------------------------------------------------------------------- */
@@ -1181,11 +1151,7 @@ footer {
     font-size: 16px;
   }
 
-  /* FOOTER ---------------------------------------------------------------------------- */
-  .footer-logo {
-    justify-items: center;
-  }
-
+  
   /* HERO SECTION, MAIN PAGE ------------------------------------------------------------ */
   .hero {
     height: 80vh;
@@ -1201,7 +1167,7 @@ footer {
 
   /* WOMEN AND MEN SECTION, MAIN PAGE -------------------------------------------------- */
   .men-women {
-    padding-top: 1rem;
+    padding-top: 2rem;
     padding-bottom: 1rem;
     justify-content: center;
     align-items: center;
@@ -1213,7 +1179,7 @@ footer {
     background-position: center;
     justify-content: center;
     width: 100%;
-    height: auto;
+    height: auto;    
   }
 
   .text-2,
@@ -1226,11 +1192,7 @@ footer {
     text-align: center;
     padding: 0rem;
   }
-
-  /*.desc {
-    padding: 15px;
-  }*/
-
+  
   .top h2 {
     font-size: 1.5rem;
   }
@@ -1243,6 +1205,11 @@ footer {
     width: 100%;
   }
 
+  .discover-entry {
+    position: relative;
+    margin-bottom: 1rem; 
+  }
+
   .discover-entry .half-text h2 {
     font-size: 16vw;
   }
@@ -1253,6 +1220,22 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+
+  /*PROCESS SECTION , MAIN AND PRICING PAGE -----------------------------------------*/
+
+  .process-space {
+    padding: 1rem;
+  }
+
+  .section-process {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    background-color: var(--c-l-grey);
+  }
+
+  .button-process-mobile {    
+    margin-bottom: 5rem;
   }
 
   /* ABOUT SECTION, MAIN PAGE ----------------------------------------------------------- */
@@ -1307,8 +1290,13 @@ footer {
     padding-top: 1rem;
   }
 
-  /*subpage contact us*/
+  /*subpage contact us----------------------------------*/
   .section-personal {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0rem;
+  }
+  .section-location {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     padding: 0rem;
@@ -1317,7 +1305,7 @@ footer {
     @media (max-width: 767.98px) {
       .portrait-image {
         margin-bottom: 3rem;
-      }
+      }      
     }
   }
 
@@ -1375,37 +1363,10 @@ footer {
       position: relative;
       transition: all 0.3s ease;
     }
+   
   }
 
-  /* Footer Responsivity ----------------------------------------------------------------- */
-  @media (max-width: 767.98px) {
-    footer .footer-links {
-      justify-content: center;
-      gap: 1.5rem;
-    }
-
-    footer .footer-form {
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    footer .footer-bottom {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    footer .footer-links-bottom {
-      margin-bottom: 1rem;
-    }
-
-    .footer-input {
-      min-height: 40px;
-      padding-top: 0.8rem;
-      padding-bottom: 0.8rem;
-    }
-  }
-
+  
   /* OUR JOURNAL SECTION, MAIN PAGE -------------------------------------------------------- */
   @media (max-width: 767px) {
     #journalCarousel .carousel-item {
@@ -1448,6 +1409,19 @@ footer {
     .col-6 {
       width: 50%;
     }
+
+    .instagram {
+      margin-top: 1rem;
+    }
+
+    .mb-4{
+      margin-bottom: 0.5rem !important;
+    }
+    
+    .btn-instagram {
+      margin: 0 2rem;
+    }
+
   }
 
   @media (min-width: 768px) {
@@ -1482,9 +1456,47 @@ footer {
 
     .contact-img {
       margin-bottom: 2rem;
+      width: 100%;
     }
 
     .contact-info .d-flex {
       justify-content: left;
     }
 }
+
+/* Footer Responsivity ----------------------------------------------------------------- */
+@media (max-width: 767.98px) {
+  footer .footer-links {
+    justify-content: space-between;   
+    padding-bottom: 2rem;
+  }
+
+  .footer-form {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }    
+
+  .footer-input {
+    min-height: 40px;
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .footer-link{
+    margin-right: 0;
+  }
+
+  .footer-container {
+    padding: 0;
+  }
+ 
+}
+
+
+

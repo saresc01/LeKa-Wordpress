@@ -1,57 +1,94 @@
 <?php wp_footer(); ?>
 
 <!-- Footer -->
-<footer class="bg-main pt-5 pb-4">
-    <div class="container">
-      <!-- Logo -->
-      <div class="row align-items-center mb-4">
-        <div class="col-12 col-md-6">
-          <a href="index.html">
-            <img src="<?php echo get_template_directory_uri(); ?>/original/img/LekaLogoWhite.png" alt="Le Ka Logo" class="footer-logo">            
-          </a>
-        </div>
-      </div>
+<footer class="bg-main pt-5 pb-4 footer-section">
 
-      <!-- Second row, links and newsletter -->
-      <div class="row">
-        <!-- Left: Links and Button -->
-        <div class="col-md-8 mb-4">
-          <div class="footer-links d-flex flex-wrap gap-3">
-            <a href="<?php echo esc_url(get_permalink(get_page_by_path("men"))); ?>" class="footer-link">For Men</a>
-            <a href="<?php echo esc_url(get_permalink(get_page_by_path("women"))); ?>" class="footer-link">For Women</a>
-            <a href="<?php echo esc_url(get_permalink(get_page_by_path("pricing"))); ?>" class="footer-link">Pricing</a>
-            <a href="<?php echo esc_url(get_permalink(get_page_by_path("contacts"))); ?>" class="footer-link">About Us</a>
-            <a href="<?php echo esc_url(get_permalink(get_page_by_path("contacts"))); ?>" class="footer-link">Contacts</a>
+      <?php 
+      $linkfooterLoop = new WP_Query(array(
+        "post_type" => "linkfooter",
+        "posts_per_page" => 1
+      ));
+      ?>
+
+      <?php if($linkfooterLoop->have_posts()): ?>
+        <?php while($linkfooterLoop->have_posts()): $linkfooterLoop->the_post() ?>
+
+        <?php
+        $subpage_men = get_field("subpage_men");
+        $subpage_women = get_field("subpage_women");
+        $subpage_pricing = get_field("subpage_pricing");
+        $subpage_about = get_field("subpage_about");
+        $subpage_contacts = get_field("subpage_contacts");
+        $newsletter_title = get_field("newsletter_title");
+        $placeholder_newsletter = get_field("placeholder_newsletter");
+        $newsletter_btn = get_field("newsletter_btn");
+        $terms = get_field("terms");
+        $privacy_policy = get_field("privacy_policy");
+        ?>
+
+        <div class="container footer-container">
+          <!-- Logo -->
+          <div class="row mb-4">
+            <div class="col-12 col-md-6 footer-container">
+              <a href="index.html">
+                <img src="<?php echo get_template_directory_uri(); ?>/original/img/LekaLogoWhite.png" alt="Le Ka Logo" class="footer-logo">            
+              </a>
+            </div>
           </div>
-        </div>
 
-        <!-- Right: Newsletter Form -->
-        <div class="col-md-4 mb-4">
-          <p class="footer-text">Get the freshest news from us</p>
-          <form class="footer-form d-flex flex-column flex-sm-row gap-2">
-            <input type="email" class="footer-input" placeholder="Your email address" required>
-            <button type="submit" class="btn-third">Subscribe</button>
-          </form>
-        </div>
-      </div>
+          <!-- Second row, links and newsletter -->
+          <div class="row">
+            <!-- Left: Links and Button -->
+            <div class="col-md-8 mb-4">
+              <div class="footer-links d-flex flex-wrap gap-3">
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path("men"))); ?>" class="footer-link"><?php echo $subpage_men; ?></a>
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path("women"))); ?>" class="footer-link"><?php echo $subpage_women; ?></a>
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path("pricing"))); ?>" class="footer-link"><?php echo $subpage_pricing; ?></a>
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path("contacts"))); ?>" class="footer-link"><?php echo $subpage_about; ?></a>
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path("contacts"))); ?>" class="footer-link"><?php echo $subpage_contacts; ?></a>
+              </div>
+            </div>
 
-      <!-- Bottom Line -->
-      <div class="footer-bottom d-flex justify-content-between align-items-center">
-        <div class="footer-links-bottom">
-          <a href="#" class="footer-link">Terms & Conditions</a>
-          <div class="vr vr-footer"></div>
-          <a href="#" class="footer-link">Privacy Policy</a>
+            <!-- Right: Newsletter Form -->
+            <div class="col-md-4 mb-4">
+              <p class="footer-text"><?php echo $newsletter_title; ?></p>
+              <form class="footer-form d-flex flex-column flex-sm-row gap-2">
+                <input type="email" class="footer-input" placeholder="<?php echo $placeholder_newsletter; ?>" required>
+                <button type="submit" class="btn-third"><?php echo $newsletter_btn; ?></button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Bottom Line -->
+          <div class="footer-bottom d-flex justify-content-between align-items-center">
+            <div class="footer-links-bottom">
+              <a href="#" class="footer-link"><?php echo $terms; ?></a>
+              <div class="vr vr-footer"></div>
+              <a href="#" class="footer-link"><?php echo $privacy_policy; ?></a>
+            </div>            
+            <div class="footer-rights">              
+              Design by <a href="https://www.linkedin.com/in/sara-escallon" target="_blank" class="footer-link-name">Sara Escallon</a> and <a href="https://www.linkedin.com/in/giedre-limantaite/" target="_blank" class="footer-link-name">Giedre Limantaite</a> 
+              © 2025 Le Ka Project. All rights reserved.
+            </div>
+          </div>
+
+          <?php endwhile; ?>
+          <?php endif;?>
+          <?php wp_reset_postdata() ?>         
+
         </div>
-        <div class="footer-rights">
-          © 2025 Le Ka Project. All rights reserved.
-        </div>
-      </div>
     </div>
   </footer>
+  
 
   <!--Scripts-->
   <!-- Bootstrap JS Bundle (incluye Popper) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Activar swipe para carouseles -->
+  <script>
+ 
+
+</script>
 
 </body>
 

@@ -10,7 +10,8 @@
         <?php while(have_posts()): the_post(); ?>
             <?php
             $title_women_page = get_field("title_women_page");
-            $description_women_page = get_field("description_women_page");                        
+            $description_women_page = get_field("description_women_page");
+            $women_btn = get_field("women_btn");                        
             ?>
 
             <div class="container py-5">
@@ -22,26 +23,26 @@
                             <?php $imgWomenPictureLoop = new WP_Query(array(
                                     "post_type" => "picture-women-page",
                                     "posts_per_page" => -1
-                                )); ?>
+                            )); ?>
                                 
-                                    <?php if($imgWomenPictureLoop->have_posts()): ?>
-                                        <?php while($imgWomenPictureLoop->have_posts()): $imgWomenPictureLoop->the_post(); ?>
+                                <?php if($imgWomenPictureLoop->have_posts()): ?>
+                                    <?php while($imgWomenPictureLoop->have_posts()): $imgWomenPictureLoop->the_post(); ?>
 
-                                            <?php                                      
-                                            $img_women_page = get_field("img_women_page");
-                                            $text_img_women_page = get_field("text_img_women_page");         
-                                            ?>                                
+                                        <?php                                      
+                                        $img_women_page = get_field("img_women_page");
+                                        $text_img_women_page = get_field("text_img_women_page");         
+                                        ?>                                
 
-                                            <figure class="portfolio-item">
-                                                <img src="<?php echo $img_women_page["url"]; ?>" alt=""class="portfolio-img">
-                                                <h3 class="portfolio-caption"><?php echo $text_img_women_page; ?></h3>
-                                            </figure>  
+                                        <figure class="portfolio-item">
+                                            <img src="<?php echo $img_women_page["url"]; ?>" alt=""class="portfolio-img">
+                                            <h3 class="portfolio-caption"><?php echo $text_img_women_page; ?></h3>
+                                        </figure>  
 
-                                        <?php endwhile;?>
-                                        <?php wp_reset_postdata(); ?>
-                                    <?php endif; ?> 
+                                    <?php endwhile;?>
+                                    <?php wp_reset_postdata(); ?>
+                                <?php endif; ?> 
                                                 
-                            </div>
+                        </div>
                     </div>
 
                     <!-- Text -->
@@ -50,7 +51,7 @@
                             <h1><?php echo $title_women_page; ?></h1>
                             <p><?php echo $description_women_page; ?></p>
                             <div>
-                                <a href="#" class="btn-primary btn">Book a Consultation</a>
+                                <a href="<?php echo esc_url(get_permalink(get_page_by_path("contacts"))); ?>" class="btn-primary btn"><?php echo $women_btn; ?></a>
                             </div>
                         </div>
                     </div>

@@ -13,7 +13,7 @@ function leka_load_stylesheets() {
     wp_enqueue_style('custom-style', get_template_directory_uri() . '/style.css');
     
     //Favicon
-    wp_enqueue_style('favicon', get_template_directory_uri() . '/img/favicon.ico');
+    wp_enqueue_style('favicon', get_template_directory_uri() . '/img/favicon.ico');    
 }
 add_action('wp_enqueue_scripts', 'leka_load_stylesheets');
 
@@ -21,5 +21,5 @@ function leka_remove_gutenberg() {
     remove_post_type_support('post', 'editor');
     remove_post_type_support('page', 'editor');
 }
-
 add_action('init', 'leka_remove_gutenberg');
+
