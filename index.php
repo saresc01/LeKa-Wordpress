@@ -7,25 +7,38 @@
         $hero_title = get_field("hero_title");
         $hero_text = get_field("hero_text");
         $hero_video = get_field("hero_video");
+        $hero_btn = get_field("hero_btn");
 
         $title_men = get_field("title_men");
         $text_men = get_field("text_men");
         $img_men = get_field("img_men");
+        $btn_men = get_field("btn_men");
         $title_women = get_field("title_women");
         $text_women = get_field("text_women");
-        $img_women = get_field("img_women");    
+        $img_women = get_field("img_women"); 
+        $btn_women = get_field("btn_women");   
 
         $process_section_title = get_field("process_section_title");
         $process_section_text = get_field("process_section_text");
+        $process_btn = get_field("process_btn");
 
         $about_title = get_field("about_title");
         $about_text = get_field("about_text");
         $about_video = get_field("about_video");
+        $about_btn = get_field("about_btn");
+
+        $faq_title = get_field("faq_title");
+        $faq_text = get_field("faq_text"); 
 
         $add_img = get_field("add_img");
         $add_text = get_field("add_text");
+
+        $journal_title = get_field("journal_title");
+        $journal_text = get_field("journal_text"); 
+
+        $insta_btn = get_field("insta_btn")
         ?>
-    
+
         <!-- HERO SECTION -->
         <section class="hero d-flex align-items-center section-first ">
           <div class="video-background">
@@ -39,7 +52,7 @@
               <div class="col-lg-6">
                 <h1 class="hero-title"><?php echo $hero_title; ?></h1>
                 <p class="hero-text mt-3"><?php echo $hero_text; ?></p>
-                <a href="#" class="btn-primary btn">Book a Consultation</a>
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path("contacts"))); ?>" class="btn-primary btn"><?php echo $hero_btn; ?></a>
               </div>
             </div>
           </div>
@@ -60,7 +73,7 @@
                     </div>
                     <div class="absolute">
                       <p><?php echo $text_men; ?></p>
-                      <p><a href="men.html" class="btn-secondary">Discover now</a></p>
+                      <p><a href="<?php echo esc_url(get_permalink(get_page_by_path("men"))); ?>" class="btn-secondary"><?php echo $btn_men; ?></a></p>
                     </div>
                   </div>
                 </div>
@@ -82,7 +95,7 @@
                     <div class="absolute col-lg-6">
                       <p><?php echo $text_women; ?></p>
                                               
-                      <p><a href="women.html" class="btn-secondary">Discover now</a></p>
+                      <p><a href="<?php echo esc_url(get_permalink(get_page_by_path("women"))); ?>" class="btn-secondary"><?php echo $btn_women; ?></a></p>
                     </div>
                   </div>
                 </div>
@@ -107,22 +120,20 @@
                     <div class="col-md-6 process-space">
                         <h2><?php echo $process_section_title; ?></h2>
                         <p><?php echo $process_section_text; ?></p>
-                        <a href="#" class="btn btn-primary mt-4 button-process-mobile">Book a Consultation</a>
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_path("contacts"))); ?>" class="btn btn-primary mt-4 button-process-mobile"><?php echo $process_btn; ?></a>
                     </div>
 
                     <!--List with icons-->
                     <div class="col-md-6 px-3">
                         <div class="timeline">
-                            <!--PROCESS ITEMS-->
-                            <?php get_template_part("template-parts/process"); ?>   
-
+                          <!--PROCESS ITEMS-->
+                          <?php get_template_part("template-parts/process"); ?>   
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!--END PROCESS-->
-
         
 
         <!--ABOUT -->
@@ -140,21 +151,14 @@
               <div class="col-lg-7 d-flex flex-column justify-content-center">
                 <h2><?php echo $about_title; ?></h2>
                 <p><?php echo $about_text; ?></p>
-                <a href="#" class="btn-secondary">Learn more <i class="bi bi-chevron-right ms-2"></i></a>
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path("about"))); ?>" class="btn-secondary"><?php echo $about_btn; ?><i class="bi bi-chevron-right ms-2"></i></a>
               </div>
             </div>
-          </div>
-          </div>
+          </div>          
         </section>
-        <!--END ABOUT-->          
-
-        <!--PROCESS test-->
-        <!-- FAQS -->
-        <?php 
-          $faq_title = get_field("faq_title");
-          $faq_text = get_field("faq_text");            
-        ?>
-
+        <!--END ABOUT--> 
+        
+        <!-- FAQS --> 
         <section class="section-faqs">
             <div class="container">
               <div class="row">
@@ -169,7 +173,6 @@
                   <div class="accordion accordion-flush accordion-faq" id="accordionFaqs">
                     <!-- ITEMS -->
                     <?php get_template_part("template-parts/faqs"); ?>  
-
                   </div>
                 </div>
               </div>
@@ -195,20 +198,16 @@
         </section>
         <!--END ADD WEDINGS-->
 
-        <!-- OUR JOURNAL - carrousel -->          
-        <?php 
-            $journal_title = get_field("journal_title");
-            $journal_text = get_field("journal_text");            
-        ?>
+        <!-- OUR JOURNAL - carrousel -->
         <section class="section-spacing">
           <div class="container">
               
             <div class="row pb-3">
                 <div class="col-md-5 title-journal">
-                <h2><?php echo $journal_title; ?></h2>
+                  <h2><?php echo $journal_title; ?></h2>
                 </div>
                 <div class="col-md-7">
-                <p><?php echo $journal_text; ?></p>
+                  <p><?php echo $journal_text; ?></p>
                 </div>
             </div>
 
@@ -217,11 +216,10 @@
           </div>
         </section>  
         <!--END OUR JOURNAL-->
-
     
         <!--TESTIMONIALS-->
 
-        <!--END TESTIMONIALS-->
+        <!--END TESTIMONIALS-->        
 
         <!--WHERE-->
         <?php get_template_part("template-parts/location"); ?>  
@@ -232,9 +230,7 @@
             <?php get_template_part("template-parts/instagram"); ?>
 
             <div class="d-flex justify-content-center w-100 position-absolute bottom-0 z-1">
-                <a href="https://www.instagram.com/le_ka_toulouse/?hl=es" target="_blank" class="btn btn-primary btn-instagram">
-                    Follow us on Instagram
-                </a>
+                <a href="https://www.instagram.com/le_ka_toulouse/" target="_blank" class="btn btn-primary btn-instagram"><?php echo $insta_btn; ?></a>
             </div>
         </section>
 

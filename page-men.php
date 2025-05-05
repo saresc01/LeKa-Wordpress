@@ -10,7 +10,8 @@
         <?php while(have_posts()): the_post(); ?>
             <?php
             $title_men_page = get_field("title_men_page");
-            $description_men_page = get_field("description_men_page");       
+            $description_men_page = get_field("description_men_page");
+            $men_btn = get_field("men_btn");
             ?>
 
             <div class="container py-5">
@@ -50,7 +51,7 @@
                             <h1><?php echo $title_men_page; ?></h1>
                             <p><?php echo $description_men_page; ?></p>
                             <div>
-                                <a href="#" class="btn-primary btn">Book a Consultation</a>
+                                <a href="<?php echo esc_url(get_permalink(get_page_by_path("contacts"))); ?>" class="btn-primary btn"><?php echo $men_btn; ?></a>
                             </div>
                         </div>
                     </div>

@@ -11,7 +11,8 @@
         <?php
         $title_cost = get_field("title_cost");
         $text_cost = get_field("text_cost"); 
-        $img_add_pricing = get_field("img_add_pricing");                             
+        $img_add_pricing = get_field("img_add_pricing");  
+        $add_btn = get_field("add_btn");                           
         ?>
 
         <section class="section-cost">
@@ -74,7 +75,7 @@
             <div class="cta-image-wrapper">
                 <img src="<?php echo $img_add_pricing["url"]; ?>" alt="background image" class="cta-background-image">
                 <div class="cta-button-wrapper">
-                    <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path("contacts"))); ?>" class="btn btn-primary"><?php echo $add_btn; ?></a>
                 </div>
             </div>
         </section>
@@ -84,6 +85,7 @@
         <?php 
         $process_section_title = get_field("process_section_title");
         $process_section_text = get_field("process_section_text");
+        $process_btn = get_field("process_btn");
         ?>
 
             <!--THE PROCESS-->
@@ -94,7 +96,7 @@
                         <div class="col-md-6 process-space">
                             <h2><?php echo $process_section_title; ?></h2>
                             <p><?php echo $process_section_text; ?></p>
-                            <a href="#" class="btn btn-primary mt-4 button-process-mobile">Book a Consultation</a>
+                            <a href="<?php echo esc_url(get_permalink(get_page_by_path("contacts"))); ?>" class="btn btn-primary mt-4 button-process-mobile"><?php echo $process_btn; ?></a>
                         </div>
 
                         <!--List with icons-->

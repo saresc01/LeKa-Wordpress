@@ -20,11 +20,11 @@
         $subpage_about = get_field("subpage_about");
         $subpage_contacts = get_field("subpage_contacts");
         $newsletter_title = get_field("newsletter_title");
+        $placeholder_newsletter = get_field("placeholder_newsletter");
         $newsletter_btn = get_field("newsletter_btn");
         $terms = get_field("terms");
         $privacy_policy = get_field("privacy_policy");
         ?>
-
 
         <div class="container footer-container">
           <!-- Logo -->
@@ -41,7 +41,7 @@
             <!-- Left: Links and Button -->
             <div class="col-md-8 mb-4">
               <div class="footer-links d-flex flex-wrap gap-3">
-                <a href="<?php echo esc_url(get_permalink(get_page_by_path("men"))); ?>" class="footer-link"><?php echo $subpage_men; ?>g</a>
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path("men"))); ?>" class="footer-link"><?php echo $subpage_men; ?></a>
                 <a href="<?php echo esc_url(get_permalink(get_page_by_path("women"))); ?>" class="footer-link"><?php echo $subpage_women; ?></a>
                 <a href="<?php echo esc_url(get_permalink(get_page_by_path("pricing"))); ?>" class="footer-link"><?php echo $subpage_pricing; ?></a>
                 <a href="<?php echo esc_url(get_permalink(get_page_by_path("contacts"))); ?>" class="footer-link"><?php echo $subpage_about; ?></a>
@@ -53,7 +53,7 @@
             <div class="col-md-4 mb-4">
               <p class="footer-text"><?php echo $newsletter_title; ?></p>
               <form class="footer-form d-flex flex-column flex-sm-row gap-2">
-                <input type="email" class="footer-input" placeholder="Your email address" required>
+                <input type="email" class="footer-input" placeholder="<?php echo $placeholder_newsletter; ?>" required>
                 <button type="submit" class="btn-third"><?php echo $newsletter_btn; ?></button>
               </form>
             </div>

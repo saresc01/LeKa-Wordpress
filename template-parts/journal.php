@@ -23,7 +23,7 @@ if ($galleryLoop->have_posts()) {
 <!-- GALLERY DESKTOP -->
 <div class="row d-none d-lg-flex">
     <?php
-    // Dividir imágenes en grupos de 2 para cada columna
+    //Divide images into groups of 2 for each column
     $chunks = array_chunk($images, 2);
     foreach ($chunks as $chunk): ?>
         <div class="col-lg-4 col-md-6 mb-4">
