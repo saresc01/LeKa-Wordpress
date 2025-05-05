@@ -208,7 +208,7 @@ footer {
 }
 
 .footer-logo {
-  height: 120px;
+  height: 150px;
   margin-bottom: 2rem;
 }
 
@@ -1246,7 +1246,7 @@ footer {
   }
 
   .about-section h2 {
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 
   /* ADD SECTION, MAIN PAGE ------------------------------------------------------------ */
@@ -1469,6 +1469,12 @@ footer {
   footer .footer-links {
     justify-content: space-between;   
     padding-bottom: 2rem;
+  }
+
+  .footer-logo {
+    height: 120px;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;    
   }
 
   .footer-form {

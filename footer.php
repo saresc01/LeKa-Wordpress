@@ -30,8 +30,8 @@
           <!-- Logo -->
           <div class="row mb-4">
             <div class="col-12 col-md-6 footer-container">
-              <a href="index.html">
-                <img src="<?php echo get_template_directory_uri(); ?>/original/img/LekaLogoWhite.png" alt="Le Ka Logo" class="footer-logo">            
+              <a href="<?php echo esc_url(home_url('/')); ?>">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/Logo_leka.png" alt="Le Ka Logo" class="footer-logo">            
               </a>
             </div>
           </div>

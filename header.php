@@ -34,7 +34,7 @@
 
               <!-- Logo -->
               <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>">
-                <img src="<?php echo get_template_directory_uri(); ?>/original/img/LekaLogoWhite.png" alt="Le Ka Logo" style="height: 70px;">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/Logo_leka.png" alt="Le Ka Logo" style="height: 70px;">
               </a>
               <!-- Mobil version -->
               <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
