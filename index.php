@@ -52,7 +52,8 @@
               <div class="col-lg-6">
                 <h1 class="hero-title"><?php echo $hero_title; ?></h1>
                 <p class="hero-text mt-3"><?php echo $hero_text; ?></p>
-                <a href="<?php echo esc_url(get_permalink(get_page_by_path("contacts"))); ?>" class="btn-primary btn"><?php echo $hero_btn; ?></a>
+                <a href="#" class="btn-primary btn"data-bs-toggle="modal" data-bs-target="#appointmentModal"><?php echo $hero_btn; ?></a>
+                
               </div>
             </div>
           </div>

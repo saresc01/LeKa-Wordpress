@@ -83,14 +83,50 @@
         </div>
     </div>
   </footer>
-  
+
+
+  <!--modal-->
+
+  <?php
+   $modalLoop = new WP_Query(array(
+        "post_type" => "modal",
+        "posts_per_page" => -1
+    )); ?>
+                
+    <?php if($modalLoop->have_posts()): ?>
+        <?php while($modalLoop->have_posts()): $modalLoop->the_post(); ?>>  
+
+        <?php
+        $modal_title = get_field("modal_title");
+        ?>
+
+        <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              
+                
+              <div class="modal-header">          
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h3 class="modal-title" id="appointmentModalLabel"><?php echo esc_html($modal_title); ?></h3>   
+                <?php echo do_shortcode('[contact-form-7 id="0836c92" title="Modal Form"]'); ?>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <?php endwhile;?>
+        <?php wp_reset_postdata(); ?>
+    <?php endif; ?>    
+
 
   <!--Scripts-->
   <!-- Bootstrap JS Bundle (incluye Popper) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Activar swipe para carouseles -->
-  <script>
- 
+  <script> 
 
 </script>
 
