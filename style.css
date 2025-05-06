@@ -239,7 +239,8 @@ footer {
   color: var(--c-white);
 }
 
-.footer-input {
+/*footer form */
+.footer-input {  
   width: 100%;
   background-color: var(--c-white);
   color: var(--c-grey);
@@ -251,6 +252,35 @@ footer {
 .footer-input::placeholder {
   color: var(--c-brand-2);
 }
+
+.wpcf7 input[type="url"], .wpcf7 input[type="email"], .wpcf7 input[type="tel"] {
+  padding: 0.5rem;
+  margin-bottom: 1rem;    
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+  border-color: var(--c-brand-2);
+  color: var(--c-brand-2);
+  padding:0;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output {
+  color: var(--c-brand-2);
+  padding:0;
+}
+
+.btn-newsletter {
+  background-color: var(--c-brand-2);
+  color: var(--c-white);
+  border: none;
+  padding: 10px 20px;
+}
+
+.btn-newsletter:hover {
+  background-color: var(--c-brand-4);
+}
+
+/*end footer form*/
 
 .footer-links {
   display: flex;
@@ -268,12 +298,6 @@ footer {
   color: var(--c-brand-1);
 }
 
-.footer-form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
 .footer-bottom {
   border-top: 1px solid var(--c-l-grey);
   padding-top: 1rem;
@@ -282,6 +306,11 @@ footer {
   justify-content: space-between;
   align-items: center;
   text-align: center;
+} 
+
+.footer-bottom {
+  font-size: 0.8rem;
+  color: var(--c-brand-2);
 }
 
 .footer-links-bottom {
@@ -299,11 +328,6 @@ footer {
   border-left: 2px solid;
 }
 
-.footer-bottom {
-  font-size: 0.8rem;
-  color: var(--c-brand-2);
-}
-
 .footer-bottom .footer-link {
   font-size: 0.8rem;
   color: #92989F;
@@ -317,6 +341,10 @@ footer {
 .footer-bottom .footer-rights {
   font-size: 0.85rem;
   color: #92989F;
+}
+
+.footer-space {
+  margin-bottom: 0.75rem;
 }
 
 
@@ -976,21 +1004,6 @@ footer {
   align-items: center;
 }
 
-.col-md-6.pe-4 .form-group {
-  border-radius: 0;
-  background-color: var(--c-l-grey);
-}
-
-.col-md-6.pe-4 .form-control {
-  border-radius: 0;
-}
-
-.form-control {
-  border-radius: 0;
-  background-color: var(--c-l-grey);
-  border: 1px solid #ccc;
-}
-
 .consultation .vr {
   border-left: 2px solid var(--c-brand-1);
   align-self: center;
@@ -1038,6 +1051,29 @@ footer {
 
 .social-icon:hover {
   color: var(--c-brand-1);
+}
+
+.col-md-6.pe-4 .form-group {
+  border-radius: 0;
+  background-color: var(--c-l-grey);
+} /*STILO FORM ORIGINAL*/
+
+.col-md-6.pe-4 .form-control {
+  border-radius: 0;
+} /*STILO FORM ORIGINAL*/
+
+.form-control {
+  border-radius: 0;
+  background-color: var(--c-l-grey);
+  border: 1px solid #ccc;  
+}/*STILO FORM ORIGINAL*/
+
+.form-control:focus {
+  border-radius: 0;
+  background-color: var(--c-l-grey);
+  border: 1px solid var(--c-brand-1);  
+  outline: 0;
+  box-shadow: 0 0 .25 rgba(49, 52, 41, 0.8);;
 }
 
 /*section: ADD, SUBPAGE: CONTACTS--------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -1414,8 +1450,8 @@ footer {
       margin-top: 1rem;
     }
 
-    .mb-4{
-      margin-bottom: 0.5rem !important;
+    .footer-space {
+      margin-bottom :0.5rem!important;
     }
     
     .btn-instagram {
@@ -1500,6 +1536,10 @@ footer {
 
   .footer-container {
     padding: 0;
+  }
+
+  .btn-newsletter {    
+    width: 100%; 
   }
  
 }

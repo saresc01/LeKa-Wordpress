@@ -19,9 +19,11 @@
         $subpage_pricing = get_field("subpage_pricing");
         $subpage_about = get_field("subpage_about");
         $subpage_contacts = get_field("subpage_contacts");
+
         $newsletter_title = get_field("newsletter_title");
-        $placeholder_newsletter = get_field("placeholder_newsletter");
-        $newsletter_btn = get_field("newsletter_btn");
+        $placeholder_newsletter = get_field("placeholder_newsletter"); //form original
+        $newsletter_btn = get_field("newsletter_btn"); //form original
+
         $terms = get_field("terms");
         $privacy_policy = get_field("privacy_policy");
         ?>
@@ -50,14 +52,16 @@
             </div>
 
             <!-- Right: Newsletter Form -->
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 footer-space ">
               <p class="footer-text"><?php echo $newsletter_title; ?></p>
-              <form class="footer-form d-flex flex-column flex-sm-row gap-2">
-                <input type="email" class="footer-input" placeholder="<?php echo $placeholder_newsletter; ?>" required>
-                <button type="submit" class="btn-third"><?php echo $newsletter_btn; ?></button>
-              </form>
-            </div>
+
+              <!--shortcode form nesletter-->
+              <div class="flex-sm-row gap-2">  
+                <?php echo do_shortcode('[contact-form-7 id="56c3bcb" title="Form Newsletter Footer"]'); ?>
+              </div>  
+              <div class="wpcf7-response-output"></div>            
           </div>
+
 
           <!-- Bottom Line -->
           <div class="footer-bottom d-flex justify-content-between align-items-center">
