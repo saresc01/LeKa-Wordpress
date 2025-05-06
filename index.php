@@ -52,7 +52,7 @@
               <div class="col-lg-6">
                 <h1 class="hero-title"><?php echo $hero_title; ?></h1>
                 <p class="hero-text mt-3"><?php echo $hero_text; ?></p>
-                <a href="#" class="btn-primary btn"data-bs-toggle="modal" data-bs-target="#appointmentModal"><?php echo $hero_btn; ?></a>
+                <a href="#" class="btn-primary btn" data-bs-toggle="modal" data-bs-target="#appointmentModal"><?php echo $hero_btn; ?></a>
                 
               </div>
             </div>
@@ -121,7 +121,7 @@
                     <div class="col-md-6 process-space">
                         <h2><?php echo $process_section_title; ?></h2>
                         <p><?php echo $process_section_text; ?></p>
-                        <a href="<?php echo esc_url(get_permalink(get_page_by_path("contacts"))); ?>" class="btn btn-primary mt-4 button-process-mobile"><?php echo $process_btn; ?></a>
+                        <a href="#" class="btn btn-primary mt-4 button-process-mobile" data-bs-toggle="modal" data-bs-target="#appointmentModal"><?php echo $process_btn; ?></a>                        
                     </div>
 
                     <!--List with icons-->

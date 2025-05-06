@@ -51,7 +51,7 @@
                             <h1><?php echo $title_men_page; ?></h1>
                             <p><?php echo $description_men_page; ?></p>
                             <div>
-                                <a href="<?php echo esc_url(get_permalink(get_page_by_path("contacts"))); ?>" class="btn-primary btn"><?php echo $men_btn; ?></a>
+                                <a href="#" class="btn-primary btn" data-bs-toggle="modal" data-bs-target="#appointmentModal"><?php echo $men_btn; ?></a>                                
                             </div>
                         </div>
                     </div>

@@ -109,7 +109,7 @@
                             <div class="px-">
                                 <h2><?php echo $approach_title; ?></h2>
                                 <p><?php echo $approach_text; ?></p>
-                                <a href="<?php echo esc_url(get_permalink(get_page_by_path("contacts"))); ?>" class="btn-primary btn"><?php echo $approach_btn; ?></a>
+                                <a href="#" class="btn-primary btn" data-bs-toggle="modal" data-bs-target="#appointmentModal"><?php echo $approach_btn; ?></a>                                
                             </div>
                         </div>
                         <!-- Img -->

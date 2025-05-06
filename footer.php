@@ -20,9 +20,7 @@
         $subpage_about = get_field("subpage_about");
         $subpage_contacts = get_field("subpage_contacts");
 
-        $newsletter_title = get_field("newsletter_title");
-        $placeholder_newsletter = get_field("placeholder_newsletter"); //form original
-        $newsletter_btn = get_field("newsletter_btn"); //form original
+        $newsletter_title = get_field("newsletter_title");       
 
         $terms = get_field("terms");
         $privacy_policy = get_field("privacy_policy");
@@ -62,7 +60,6 @@
               <div class="wpcf7-response-output"></div>            
           </div>
 
-
           <!-- Bottom Line -->
           <div class="footer-bottom d-flex justify-content-between align-items-center">
             <div class="footer-links-bottom">
@@ -84,9 +81,7 @@
     </div>
   </footer>
 
-
   <!--modal-->
-
   <?php
    $modalLoop = new WP_Query(array(
         "post_type" => "modal",
@@ -102,8 +97,7 @@
 
         <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              
+            <div class="modal-content">              
                 
               <div class="modal-header">          
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
