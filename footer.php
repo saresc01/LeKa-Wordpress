@@ -89,7 +89,7 @@
     )); ?>
                 
     <?php if($modalLoop->have_posts()): ?>
-        <?php while($modalLoop->have_posts()): $modalLoop->the_post(); ?>>  
+        <?php while($modalLoop->have_posts()): $modalLoop->the_post(); ?>
 
         <?php
         $modal_title = get_field("modal_title");
