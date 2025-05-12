@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes() ?>>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,6 +30,11 @@
               $subpage_pricing = get_field("subpage_pricing");
               $subpage_about = get_field("subpage_about");
               $subpage_contacts = get_field("subpage_contacts");
+              $subpage_men_link = get_field("subpage_men_link");
+              $subpage_women_link = get_field("subpage_women_link");
+              $subpage_pricing_link = get_field("subpage_pricing_link");
+              $subpage_about_link = get_field("subpage_about_link");
+              $subpage_contact_link = get_field("subpage_contact_link");
               ?>
 
               <!-- Logo -->
@@ -41,16 +46,15 @@
                 data-bs-target="#mainNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
-
               
               <!-- Navbar content, right -->
               <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
                 <ul class="navbar-nav mb-2 mb-lg-0 gap-4">
-                  <li class="nav-item"><a class="nav-link" href="<?php echo esc_url(get_permalink(get_page_by_path("men"))); ?>"><?php echo $subpage_men; ?></a></li>
-                  <li class="nav-item"><a class="nav-link" href="<?php echo esc_url(get_permalink(get_page_by_path("women"))); ?>"><?php echo $subpage_women; ?></a></li>
-                  <li class="nav-item"><a class="nav-link" href="<?php echo esc_url(get_permalink(get_page_by_path("pricing"))); ?>"><?php echo $subpage_pricing; ?></a></li>
-                  <li class="nav-item"><a class="nav-link" href="<?php echo esc_url(get_permalink(get_page_by_path("about"))); ?>"><?php echo $subpage_about; ?></a></li>
-                  <li class="nav-item"><a class="nav-link" href="<?php echo esc_url(get_permalink(get_page_by_path("contacts"))); ?>"><?php echo $subpage_contacts; ?></a></li>
+                  <li class="nav-item"><a class="nav-link" href="<?php echo esc_url(get_permalink(get_page_by_path($subpage_men_link))); ?>"><?php echo $subpage_men; ?></a></li>
+                  <li class="nav-item"><a class="nav-link" href="<?php echo esc_url(get_permalink(get_page_by_path($subpage_women_link))); ?>"><?php echo $subpage_women; ?></a></li>
+                  <li class="nav-item"><a class="nav-link" href="<?php echo esc_url(get_permalink(get_page_by_path($subpage_pricing_link))); ?>"><?php echo $subpage_pricing; ?></a></li>
+                  <li class="nav-item"><a class="nav-link" href="<?php echo esc_url(get_permalink(get_page_by_path($subpage_about_link))); ?>"><?php echo $subpage_about; ?></a></li>
+                  <li class="nav-item"><a class="nav-link" href="<?php echo esc_url(get_permalink(get_page_by_path($subpage_contact_link))); ?>"><?php echo $subpage_contacts; ?></a></li>
                 </ul>
                 <ul><?php pll_the_languages() ?></ul>
               </div>

@@ -74,7 +74,7 @@
                     </div>
                     <div class="absolute">
                       <p><?php echo $text_men; ?></p>
-                      <p><a href="<?php echo esc_url(get_permalink(get_page_by_path("men"))); ?>" class="btn-secondary"><?php echo $btn_men; ?></a></p>
+                      <p><a href="<?php echo esc_url(get_permalink(get_page_by_path("hommes"))); ?>" class="btn-secondary"><?php echo $btn_men; ?></a></p>
                     </div>
                   </div>
                 </div>

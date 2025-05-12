@@ -24,6 +24,12 @@
 
         $terms = get_field("terms");
         $privacy_policy = get_field("privacy_policy");
+
+        $subpage_men_link = get_field("subpage_men_link");
+        $subpage_women_link = get_field("subpage_women_link");
+        $subpage_pricing_link = get_field("subpage_pricing_link");
+        $subpage_about_link = get_field("subpage_about_link");
+        $subpage_contact_link = get_field("subpage_contact_link");
         ?>
 
         <div class="container footer-container">
@@ -41,11 +47,11 @@
             <!-- Left: Links and Button -->
             <div class="col-md-8 mb-4">
               <div class="footer-links d-flex flex-wrap gap-3">
-                <a href="<?php echo esc_url(get_permalink(get_page_by_path("men"))); ?>" class="footer-link"><?php echo $subpage_men; ?></a>
-                <a href="<?php echo esc_url(get_permalink(get_page_by_path("women"))); ?>" class="footer-link"><?php echo $subpage_women; ?></a>
-                <a href="<?php echo esc_url(get_permalink(get_page_by_path("pricing"))); ?>" class="footer-link"><?php echo $subpage_pricing; ?></a>
-                <a href="<?php echo esc_url(get_permalink(get_page_by_path("contacts"))); ?>" class="footer-link"><?php echo $subpage_about; ?></a>
-                <a href="<?php echo esc_url(get_permalink(get_page_by_path("contacts"))); ?>" class="footer-link"><?php echo $subpage_contacts; ?></a>
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path($subpage_men_link))); ?>" class="footer-link"><?php echo $subpage_men; ?></a>
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path($subpage_women_link))); ?>" class="footer-link"><?php echo $subpage_women; ?></a>
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path($subpage_pricing_link))); ?>" class="footer-link"><?php echo $subpage_pricing; ?></a>
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path($subpage_about_link))); ?>" class="footer-link"><?php echo $subpage_about; ?></a>
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path($subpage_contact_link))); ?>" class="footer-link"><?php echo $subpage_contacts; ?></a>
               </div>
             </div>
 
