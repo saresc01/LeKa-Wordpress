@@ -67,9 +67,9 @@
               <div class="vr vr-footer"></div>
               <a href="#" class="footer-link"><?php echo $privacy_policy; ?></a>
             </div>            
-            <div class="footer-rights">              
-              Design by <a href="https://www.linkedin.com/in/sara-escallon" target="_blank" class="footer-link-name">Sara Escallon</a> and <a href="https://www.linkedin.com/in/giedre-limantaite/" target="_blank" class="footer-link-name">Giedre Limantaite</a> 
-              © 2025 Le Ka Project. All rights reserved.
+            <div class="footer-rights"> 
+              <?php pll_e("Design by")?><a href="https://www.linkedin.com/in/sara-escallon" target="_blank" class="footer-link-name"> Sara Escallon</a> <?php pll_e("and")?> <a href="https://www.linkedin.com/in/giedre-limantaite/" target="_blank" class="footer-link-name">Giedre Limantaite</a> 
+              © 2025 Le Ka Project. <?php pll_e("All rights reserved.")?>
             </div>
           </div>
 

@@ -23,3 +23,9 @@ function leka_remove_gutenberg() {
 }
 add_action('init', 'leka_remove_gutenberg');
 
+function plp_register_strings() {
+    pll_register_string("Design by","Design by"); //name of the group and text to translate, all the text that is hardcode , create a new line 
+    pll_register_string("And","and");
+    pll_register_string("Rights","All rights reserved.");
+}
+add_action('init', 'plp_register_strings');

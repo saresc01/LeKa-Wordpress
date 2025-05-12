@@ -52,6 +52,7 @@
                   <li class="nav-item"><a class="nav-link" href="<?php echo esc_url(get_permalink(get_page_by_path("about"))); ?>"><?php echo $subpage_about; ?></a></li>
                   <li class="nav-item"><a class="nav-link" href="<?php echo esc_url(get_permalink(get_page_by_path("contacts"))); ?>"><?php echo $subpage_contacts; ?></a></li>
                 </ul>
+                <ul><?php pll_the_languages() ?></ul>
               </div>
 
               <?php endwhile; ?>
