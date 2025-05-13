@@ -13,8 +13,8 @@
             ?>                                
 
             <div class="timeline-step d-flex px-3">
-                <div class="icon-wrapper ">
-                    <img src="<?php echo esc_url($icon_process['url']); ?>" alt="" class="icon-image">
+                <div class="timeline-icon-wrapper">
+                    <img src="<?php echo esc_url($icon_process['url']); ?>" alt="" class="timeline-icon-image">
                     <div class="timeline-line"></div>
                 </div>
                 

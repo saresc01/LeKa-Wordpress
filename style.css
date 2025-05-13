@@ -512,7 +512,7 @@ footer {
   margin-bottom: 1.5rem;
 }
 
-.icon-wrapper {
+.timeline-icon-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -531,7 +531,7 @@ footer {
   display: none;
 }/* if i want the last line comment this line*/
 
-.icon-image {    /*change here the size of the icon*/
+.timeline-icon-image {    /*change here the size of the icon*/
   width: 5rem;
   object-fit: contain;  
 }
@@ -1143,13 +1143,16 @@ footer {
     margin-bottom: 3rem;
   }
 
-  .icon-wrapper {    
-    margin-right: 1rem;
+  .timeline-icon-wrapper {    
+    margin-right: 0rem;
+  }
+
+  .timeline-icon-image {    /*change here the size of the icon in media*/
+    width: 3rem; 
   }
 
   .cost-space {       
     padding: 1rem;
-
   }
 
   /* NAVBAR ---------------------------------------------------------------------------- */
@@ -1278,17 +1281,18 @@ footer {
   }
 
   .section-process {
-    padding-top: 5rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 0rem;
     background-color: var(--c-l-grey);
   }
 
   .button-process-mobile {    
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
   }
 
   /* ABOUT SECTION, MAIN PAGE ----------------------------------------------------------- */
   .about-section video {
+    padding-top: 3rem;
     width: 100%;
     max-width: 567px;
     height: auto;
@@ -1296,6 +1300,13 @@ footer {
 
   .about-section h2 {
     margin-top: 3rem;
+  }
+
+  /* FAQ SECTION MAIN PAGE MOBILE */
+
+  .section-faqs {
+    margin-top: 3rem;
+    padding: 1rem 0;
   }
 
   /* ADD SECTION, MAIN PAGE ------------------------------------------------------------ */
@@ -1339,6 +1350,16 @@ footer {
     padding-top: 1rem;
   }
 
+  /* GALLERY / JOURNAL  SECTION MAIN PAGE*/
+
+  .title-journal{
+    padding-top: 0rem;
+  }
+
+  .h2-journal{
+    margin-bottom: 0rem;
+  }
+
   /*subpage contact us----------------------------------*/
   .section-personal {
     margin-top: 1.5rem;
@@ -1347,7 +1368,7 @@ footer {
   }
   .section-location {
     margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0rem;
     padding: 0rem;
   }
 
@@ -1356,7 +1377,11 @@ footer {
         margin-bottom: 3rem;
       }      
     }
+
+  .mb-address{
+    margin-bottom: 0rem !important;
   }
+}
 
 
   /* Desktop version tweaks --------------------------------------------------------------- */

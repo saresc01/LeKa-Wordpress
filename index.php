@@ -209,7 +209,7 @@
               
             <div class="row pb-3">
                 <div class="col-md-5 title-journal">
-                  <h2><?php echo $journal_title; ?></h2>
+                  <h2 class="h2-journal"><?php echo $journal_title; ?></h2>
                 </div>
                 <div class="col-md-7">
                   <p><?php echo $journal_text; ?></p>

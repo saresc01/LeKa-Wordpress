@@ -42,7 +42,7 @@
           </div>
 
           <!-- Address -->
-          <div class="mb-4 d-flex align-items-start">
+          <div class="mb-4 d-flex align-items-start mb-address">
             <div class="icon-wrapper me-3 mt-1">
               <i class="bi bi-geo-alt-fill fs-3 icon-colored"></i>
             </div>
