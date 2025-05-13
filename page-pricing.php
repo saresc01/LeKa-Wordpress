@@ -74,9 +74,9 @@
         <section class="cta-section">
             <div class="cta-image-wrapper">
                 <img src="<?php echo $img_add_pricing["url"]; ?>" alt="background image" class="cta-background-image">
-                <div class="cta-button-wrapper">
-                    <a href="<?php echo esc_url(get_permalink(get_page_by_path("contacts"))); ?>" class="btn btn-primary"><?php echo $add_btn; ?></a>
-                </div>
+                <!--<div class="cta-button-wrapper">
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#appointmentModal"><?php echo $add_btn; ?></a>                    
+                </div>-->
             </div>
         </section>
         <!--END ADD + button-->
@@ -96,7 +96,7 @@
                         <div class="col-md-6 process-space">
                             <h2><?php echo $process_section_title; ?></h2>
                             <p><?php echo $process_section_text; ?></p>
-                            <a href="<?php echo esc_url(get_permalink(get_page_by_path("contacts"))); ?>" class="btn btn-primary mt-4 button-process-mobile"><?php echo $process_btn; ?></a>
+                            <a href="#" class="btn btn-primary mt-4 button-process-mobile" data-bs-toggle="modal" data-bs-target="#appointmentModal"><?php echo $process_btn; ?></a>
                         </div>
 
                         <!--List with icons-->

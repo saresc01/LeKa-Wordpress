@@ -13,7 +13,7 @@
             ?>                                
 
             <div class="timeline-step d-flex px-3">
-                <div class="icon-wrapper text-center ">
+                <div class="icon-wrapper ">
                     <img src="<?php echo esc_url($icon_process['url']); ?>" alt="" class="icon-image">
                     <div class="timeline-line"></div>
                 </div>
@@ -22,8 +22,9 @@
                     <h3><?php echo $title_process; ?></h3>
                     <p><?php echo $text_process; ?></p>
                 </div>
-            </div>
+            </div>            
 
         <?php endwhile;?>
         <?php wp_reset_postdata(); ?>
     <?php endif; ?>      
+

@@ -166,6 +166,12 @@ li {
   color: var(--c-white);
 }
 
+.btn-consultation:disabled {
+  background-color:  rgba(49, 52, 41, 0.6);
+  font-weight: 500;
+  color: var(--c-white);
+}
+
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /* NAVBAR----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .navbar {
@@ -208,7 +214,7 @@ footer {
 }
 
 .footer-logo {
-  height: 120px;
+  height: 150px;
   margin-bottom: 2rem;
 }
 
@@ -239,7 +245,8 @@ footer {
   color: var(--c-white);
 }
 
-.footer-input {
+/*footer form */
+.footer-input {  
   width: 100%;
   background-color: var(--c-white);
   color: var(--c-grey);
@@ -251,6 +258,46 @@ footer {
 .footer-input::placeholder {
   color: var(--c-brand-2);
 }
+
+.wpcf7 input[type="url"], .wpcf7 input[type="email"], .wpcf7 input[type="tel"] {
+  padding: 0.5rem;
+  margin-bottom: 1rem;    
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+  border-color: #92989F;
+  color: #92989F;
+  padding:0;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output {
+  color: #92989F;
+  padding:0;
+}
+
+.wpcf7-spinner {
+  display: none !important;
+}
+
+.btn-newsletter {
+  background-color: var(--c-brand-2);
+  color: var(--c-white);
+  border: none;
+  padding: 10px 20px;
+}
+
+.btn-newsletter:hover {
+  background-color: var(--c-brand-4);
+}
+
+.newsletter-consent,
+.newsletter-consent label,
+.consent-checkbox {
+  color: #92989F;
+}
+
+
+/*end footer form*/
 
 .footer-links {
   display: flex;
@@ -268,12 +315,6 @@ footer {
   color: var(--c-brand-1);
 }
 
-.footer-form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
 .footer-bottom {
   border-top: 1px solid var(--c-l-grey);
   padding-top: 1rem;
@@ -282,6 +323,11 @@ footer {
   justify-content: space-between;
   align-items: center;
   text-align: center;
+} 
+
+.footer-bottom {
+  font-size: 0.8rem;
+  color: var(--c-brand-2);
 }
 
 .footer-links-bottom {
@@ -299,11 +345,6 @@ footer {
   border-left: 2px solid;
 }
 
-.footer-bottom {
-  font-size: 0.8rem;
-  color: var(--c-brand-2);
-}
-
 .footer-bottom .footer-link {
   font-size: 0.8rem;
   color: #92989F;
@@ -317,6 +358,10 @@ footer {
 .footer-bottom .footer-rights {
   font-size: 0.85rem;
   color: #92989F;
+}
+
+.footer-space {
+  margin-bottom: 0.75rem;
 }
 
 
@@ -458,13 +503,6 @@ footer {
   padding-right: 5rem;
 }
 
-.icon-colored {
-  color: var(--c-brand-1);
-  transition: color 0.3s ease;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
 .section-process .row {
   align-items: flex-start;
 }
@@ -472,36 +510,31 @@ footer {
 .timeline-step {
   position: relative;
   margin-bottom: 1.5rem;
-
 }
 
 .icon-wrapper {
-  min-width: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
-  overflow: hidden;
-  margin-right: 2rem;
+  margin-right: 2rem; /*size between icon and text*/
 }
 
-.timeline-line {
-  position: absolute;
-  top: 3rem; 
-  left: 50%;
-  transform: translateX(-50%);
+.timeline-line {  
   width: 2px;
   height: 100%;
   background-color: var(--c-brand-1);
-  z-index: 1;
+  margin-top: 0.5rem;
 }
 
 .timeline-step:last-child .timeline-line {
   display: none;
-}/* si quiero la ultima linea de process comentar*/
+}/* if i want the last line comment this line*/
 
-.icon-image {
-  width: 40px;
-  height: 40px;
+.icon-image {    /*change here the size of the icon*/
+  width: 5rem;
   object-fit: contain;  
-} /*nuevo desde wordpress*/
+}
 
 /*Section: ABOUT, MAIN PAGE------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -784,12 +817,9 @@ footer {
   font-size: var(--fs-body);
   font-family: var(--f-p);
   padding: 1rem 1.25rem;
-  margin-top: -1px;
-  /*forzado*/
-  z-index: 99;
-  /*forzado*/
-  position: relative;
-  /*forzado*/
+  margin-top: -1px;  
+  z-index: 99;  
+  position: relative;  
 }
 
 .accordion .panel-default,
@@ -900,7 +930,7 @@ footer {
 .cta-section {
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 80vh;
   overflow: hidden;
   background-color: var(--c-black);
 }
@@ -946,11 +976,19 @@ footer {
   background-color: var(--c-l-grey);
   padding-top: 5rem;
   margin-top: 4rem;
+  padding-bottom: 2rem;
 }
 
 .section-aproach {
   margin-top: 5rem;
   padding-top: 2rem;
+}
+
+.icon-care {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 /*Section: MY APPROACH, SUBPAGE: ABOUT US---------------------------------------------------------------------------------------------------------------------------------------*/
@@ -974,21 +1012,6 @@ footer {
 
 .request-title+.row {
   align-items: center;
-}
-
-.col-md-6.pe-4 .form-group {
-  border-radius: 0;
-  background-color: var(--c-l-grey);
-}
-
-.col-md-6.pe-4 .form-control {
-  border-radius: 0;
-}
-
-.form-control {
-  border-radius: 0;
-  background-color: var(--c-l-grey);
-  border: 1px solid #ccc;
 }
 
 .consultation .vr {
@@ -1040,10 +1063,36 @@ footer {
   color: var(--c-brand-1);
 }
 
+.col-md-6.pe-4 .form-group {
+  border-radius: 0;
+  background-color: var(--c-l-grey);
+} /*STILO FORM ORIGINAL*/
+
+.col-md-6.pe-4 .form-control {
+  border-radius: 0;
+} /*STILO FORM ORIGINAL*/
+
+.form-control {
+  border-radius: 0;
+  background-color: var(--c-l-grey);
+  border: 1px solid #ccc;  
+}/*STILO FORM ORIGINAL*/
+
+.form-control:focus {
+  border-radius: 0;
+  background-color: var(--c-l-grey);
+  border: 1px solid var(--c-brand-1);  
+  outline: 0;
+  box-shadow: 0 0 .25 rgba(49, 52, 41, 0.8);;
+}
+
 /*section: ADD, SUBPAGE: CONTACTS--------------------------------------------------------------------------------------------------------------------------------------------------*/
 .rotating-two-section {
   background-color: var(--c-black);
 }
+
+/*modal*/
+
 
 
 
@@ -1246,7 +1295,7 @@ footer {
   }
 
   .about-section h2 {
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 
   /* ADD SECTION, MAIN PAGE ------------------------------------------------------------ */
@@ -1281,7 +1330,7 @@ footer {
 
   .section-care {
     background-color: var(--c-l-grey);
-    padding-top: 2rem;
+    padding-top: 5rem;
     margin-top: 2rem;
   }
 
@@ -1414,8 +1463,8 @@ footer {
       margin-top: 1rem;
     }
 
-    .mb-4{
-      margin-bottom: 0.5rem !important;
+    .footer-space {
+      margin-bottom :0.5rem!important;
     }
     
     .btn-instagram {
@@ -1471,6 +1520,12 @@ footer {
     padding-bottom: 2rem;
   }
 
+  .footer-logo {
+    height: 120px;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;    
+  }
+
   .footer-form {
     flex-direction: column;
     gap: 1rem;
@@ -1494,6 +1549,10 @@ footer {
 
   .footer-container {
     padding: 0;
+  }
+
+  .btn-newsletter {    
+    width: 100%; 
   }
  
 }

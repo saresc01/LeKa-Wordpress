@@ -19,7 +19,7 @@
             $consultation_form = get_field("consultation_form");
             $facebook = get_field("facebook");
             $instagram = get_field("instagram");
-            $consultation_btn = get_field("consultation_btn");
+            $consultation_btn = get_field("consultation_btn"); // FORM BUTTON
 
             $circle_text_add = get_field("circle_text_add");
             $img_add_contact = get_field("img_add_contact");
@@ -74,30 +74,12 @@
                         <!-- Form  check after install plugin contact form 7-->
                         <div class="col-md-5 mt-5 mt-md-0">
                             <h3 class="text-start"><?php echo $consultation_form; ?></h3>
-                            <div class="contact-form mt-4">
-
-                                <div class="form-group mb-3">
-                                    <input type="text" class="form-control" id="fname" placeholder="NAME" name="fname">
-                                </div>
-
-                                <div class="form-group mb-3">
-                                    <input type="text" class="form-control" id="lname" placeholder="MOBILE" name="lname">
-                                </div>
-
-                                <div class="form-group mb-3">
-                                    <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email">
-                                </div>
-
-                                <div class="form-group mb-3">
-                                    <textarea class="form-control" rows="5" id="comment" placeholder="MESSAGE"></textarea>
-                                </div>
-
-                                <div class="form-group">
-                                    <a href="#" class="btn btn-consultation"><?php echo $consultation_btn; ?></a>
-                                </div>
+                            
+                                <?php echo do_shortcode('[contact-form-7 id="f3a51be" title="Form Contact Page"]'); ?>
 
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </section>

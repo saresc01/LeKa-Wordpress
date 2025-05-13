@@ -23,3 +23,43 @@ function leka_remove_gutenberg() {
 }
 add_action('init', 'leka_remove_gutenberg');
 
+function plp_register_strings() {
+    pll_register_string("Design by","Design by"); //name of the group and text to translate, all the text that is hardcode , create a new line 
+    pll_register_string("And","and");
+    pll_register_string("Rights","All rights reserved.");
+}
+add_action('init', 'plp_register_strings');
+
+add_filter('template_include', 'force_page_by_slug');
+
+function force_page_by_slug($template) {
+    if (!is_page()) return $template;
+
+    global $post;
+
+    if (!$post) return $template;
+
+    // mapping french slugs with english templates
+    $slug_template_map = [
+        'hommes' => 'page-men.php',
+        'femmes' => 'page-women.php',
+        'tarifs' => 'page-pricing.php',
+        'propos' => 'page-about.php',
+        'contact' => 'page-contacts.php',
+        'conditions-generales' => 'page-terms.php',
+        'politique-confidentialite' => 'page-privacy-policy.php'
+    ];
+
+    // getting slug from current page
+    $slug = $post->post_name;
+
+    // Loading from the map and using the template if exists
+    if (isset($slug_template_map[$slug])) {
+        $en_template = locate_template($slug_template_map[$slug]);
+        if ($en_template) {
+            return $en_template;
+        }
+    }
+
+    return $template;
+}
