@@ -1558,4 +1558,41 @@ footer {
 }
 
 
+/*-----Flag in navigation bar------*/
+.flag-container-desktop {
+  padding-left: 2rem;
+}
+
+.flag-container-mobile {
+  padding-left: 5rem;
+}
+
+.flag-mobile {
+  display: block;
+}
+
+.flag-desktop {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .flag-mobile {
+    display: none;
+  }
+
+  .flag-desktop {
+    display: block;
+  }
+}
+
+.switch-language img {
+    width: 24px;
+    height: auto;
+    transition: transform 0.2s ease;
+}
+
+.switch-language:hover img {
+    transform: scale(1.1);
+}
+
 

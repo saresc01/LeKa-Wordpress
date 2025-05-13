@@ -41,9 +41,14 @@
               <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/Logo_leka.png" alt="Le Ka Logo" style="height: 70px;">
               </a>
-              <!-- Mobil version -->
-              <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#mainNavbar">
+
+              <!-- Flag mobile version -->
+              <div class="flag-container-mobile flag-mobile">
+                <?php custom_single_language_switcher(); ?>
+              </div>
+
+              <!-- Menu mobile version -->
+              <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
               
@@ -55,9 +60,12 @@
                   <li class="nav-item"><a class="nav-link" href="<?php echo esc_url(get_permalink(get_page_by_path($subpage_pricing_link))); ?>"><?php echo $subpage_pricing; ?></a></li>
                   <li class="nav-item"><a class="nav-link" href="<?php echo esc_url(get_permalink(get_page_by_path($subpage_about_link))); ?>"><?php echo $subpage_about; ?></a></li>
                   <li class="nav-item"><a class="nav-link" href="<?php echo esc_url(get_permalink(get_page_by_path($subpage_contact_link))); ?>"><?php echo $subpage_contacts; ?></a></li>
-                </ul>
-                <ul><?php pll_the_languages() ?></ul>         
+                </ul>       
 
+              </div>
+
+              <div class="flag-container-desktop flag-desktop">
+                <?php custom_single_language_switcher(); ?>
               </div>
 
               <?php endwhile; ?>

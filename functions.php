@@ -63,3 +63,28 @@ function force_page_by_slug($template) {
 
     return $template;
 }
+
+
+function custom_single_language_switcher() {
+    $languages = pll_the_languages(array(
+        'raw' => 1,
+        'hide_if_empty' => 0,
+        'show_flags' => 1,
+        'show_names' => 0
+    ));
+
+    $current_lang = pll_current_language(); // 'en' or 'fr'
+    $flag_url = get_template_directory_uri() . "/img/" . $current_lang . ".png";
+
+    if ($languages && count($languages) == 2) {
+        foreach ($languages as $lang) {
+            if (!$lang['current_lang']) {
+                // Mostrar solo la bandera del idioma que NO está activo
+                echo '<a href="' . esc_url($lang['url']) . '" class="switch-language">';
+                // echo $lang['flag'];
+                echo '<img src="' . esc_url($flag_url) . '" alt="' . esc_attr($current_lang) . '">';
+                echo '</a>';
+            }
+        }
+    }
+}
