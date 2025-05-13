@@ -68,8 +68,8 @@
                         <?php foreach ($care_items as $item): ?>
                             <div class="col-md-3 mb-4">
                                 <div class="py-4 px-3 h-100">
-                                    <div class="icon-wrapper mb-3">                            
-                                    <img src="<?php echo esc_url($item['icon']['url']); ?>" alt="" style="height: 50px;">
+                                    <div class="icon-care mb-3">                            
+                                    <img src="<?php echo esc_url($item['icon']['url']); ?>" alt="" style="height: 100px;">
 
                                     </div>
                                     <h4><?php echo esc_html($item['title']); ?></h4>
@@ -85,8 +85,8 @@
                             <?php foreach ($care_items as $index => $item): ?>
                                 <div class="carousel-item <?php if ($index === 0) echo 'active'; ?>">
                                     <div class="py-4 px-3">
-                                        <div class="icon-wrapper mb-3">                                
-                                        <img src="<?php echo esc_url($item['icon']['url']); ?>" alt="" style="height: 50px;">
+                                        <div class="icon-care mb-3">                                
+                                        <img src="<?php echo esc_url($item['icon']['url']); ?>" alt="" style="height: 100px;">
                                         </div>
                                         <h4><?php echo esc_html($item['title']); ?></h4>
                                         <p><?php echo esc_html($item['text']); ?></p>

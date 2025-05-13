@@ -6,7 +6,8 @@
         <?php
         $hero_title = get_field("hero_title");
         $hero_text = get_field("hero_text");
-        $hero_video = get_field("hero_video");
+        //$hero_video = get_field("hero_video");
+        $hero_img = get_field("hero_img");
         $hero_btn = get_field("hero_btn");
 
         $title_men = get_field("title_men");
@@ -42,10 +43,13 @@
         <!-- HERO SECTION -->
         <section class="hero d-flex align-items-center section-first ">
           <div class="video-background">
-            <video autoplay muted loop class="video-background-content">
+            <img src="<?php echo $hero_img["url"]; ?>" alt=""class="video-background-content">
+
+
+            <!-- <video autoplay muted loop class="video-background-content">
               <source src="<?php echo $hero_video['url']; ?>" type="video/mp4">
               Your browser does not support the video element.
-            </video>
+            </video> -->
           </div>
           <div class="container">
             <div class="row">

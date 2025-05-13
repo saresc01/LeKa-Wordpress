@@ -46,6 +46,8 @@ function force_page_by_slug($template) {
         'tarifs' => 'page-pricing.php',
         'propos' => 'page-about.php',
         'contact' => 'page-contacts.php',
+        'conditions-generales' => 'page-terms.php',
+        'politique-confidentialite' => 'page-privacy-policy.php'
     ];
 
     // getting slug from current page

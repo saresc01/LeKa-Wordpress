@@ -30,6 +30,8 @@
         $subpage_pricing_link = get_field("subpage_pricing_link");
         $subpage_about_link = get_field("subpage_about_link");
         $subpage_contact_link = get_field("subpage_contact_link");
+        $terms_link = get_field("terms_and_conditions_link");
+        $privacy_link = get_field("privacy_link");
         ?>
 
         <div class="container footer-container">
@@ -69,9 +71,9 @@
           <!-- Bottom Line -->
           <div class="footer-bottom d-flex justify-content-between align-items-center">
             <div class="footer-links-bottom">
-              <a href="#" class="footer-link"><?php echo $terms; ?></a>
+              <a href="<?php echo esc_url(get_permalink(get_page_by_path($terms_link))); ?>" class="footer-link"><?php echo $terms; ?></a>
               <div class="vr vr-footer"></div>
-              <a href="#" class="footer-link"><?php echo $privacy_policy; ?></a>
+              <a href="<?php echo esc_url(get_permalink(get_page_by_path($privacy_link))); ?>" class="footer-link"><?php echo $privacy_policy; ?></a>
             </div>            
             <div class="footer-rights"> 
               <?php pll_e("Design by")?><a href="https://www.linkedin.com/in/sara-escallon" target="_blank" class="footer-link-name"> Sara Escallon</a> <?php pll_e("and")?> <a href="https://www.linkedin.com/in/giedre-limantaite/" target="_blank" class="footer-link-name">Giedre Limantaite</a> 

@@ -503,13 +503,6 @@ footer {
   padding-right: 5rem;
 }
 
-.icon-colored {
-  color: var(--c-brand-1);
-  transition: color 0.3s ease;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
 .section-process .row {
   align-items: flex-start;
 }
@@ -517,36 +510,31 @@ footer {
 .timeline-step {
   position: relative;
   margin-bottom: 1.5rem;
-
 }
 
 .icon-wrapper {
-  min-width: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
-  overflow: hidden;
-  margin-right: 2rem;
+  margin-right: 2rem; /*size between icon and text*/
 }
 
-.timeline-line {
-  position: absolute;
-  top: 3rem; 
-  left: 50%;
-  transform: translateX(-50%);
+.timeline-line {  
   width: 2px;
   height: 100%;
   background-color: var(--c-brand-1);
-  z-index: 1;
+  margin-top: 0.5rem;
 }
 
 .timeline-step:last-child .timeline-line {
   display: none;
-}/* si quiero la ultima linea de process comentar*/
+}/* if i want the last line comment this line*/
 
-.icon-image {
-  width: 40px;
-  height: 40px;
+.icon-image {    /*change here the size of the icon*/
+  width: 5rem;
   object-fit: contain;  
-} /*nuevo desde wordpress*/
+}
 
 /*Section: ABOUT, MAIN PAGE------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -829,12 +817,9 @@ footer {
   font-size: var(--fs-body);
   font-family: var(--f-p);
   padding: 1rem 1.25rem;
-  margin-top: -1px;
-  /*forzado*/
-  z-index: 99;
-  /*forzado*/
-  position: relative;
-  /*forzado*/
+  margin-top: -1px;  
+  z-index: 99;  
+  position: relative;  
 }
 
 .accordion .panel-default,
@@ -991,11 +976,19 @@ footer {
   background-color: var(--c-l-grey);
   padding-top: 5rem;
   margin-top: 4rem;
+  padding-bottom: 2rem;
 }
 
 .section-aproach {
   margin-top: 5rem;
   padding-top: 2rem;
+}
+
+.icon-care {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 /*Section: MY APPROACH, SUBPAGE: ABOUT US---------------------------------------------------------------------------------------------------------------------------------------*/
@@ -1337,7 +1330,7 @@ footer {
 
   .section-care {
     background-color: var(--c-l-grey);
-    padding-top: 2rem;
+    padding-top: 5rem;
     margin-top: 2rem;
   }
 
