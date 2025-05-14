@@ -18,9 +18,9 @@
                     
 
                     <!-- Text -->
-                    <div class="col-md-5 order-1 order-md-2">
+                    <div class="container-plain">
                         <div class="sticky-top pt-4" style="top: var(--navbar-height);">
-                            <h1><?php echo $cond_title; ?></h1>
+                            <h2><?php echo $cond_title; ?></h2>
                             <p><?php echo $cond_text; ?></p>
                             
                         </div>
