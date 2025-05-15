@@ -9,8 +9,8 @@
     <?php if(have_posts()): ?>
         <?php while(have_posts()): the_post(); ?>
             <?php
-            $privacy_text = get_field("privacy_text");
-            $privacy_title = get_field("privacy_title");           
+                $privacy_text = get_field("privacy_text");
+                $privacy_title = get_field("privacy_title");           
             ?>
 
             <div class="container py-5">

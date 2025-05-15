@@ -4,39 +4,43 @@
       <?php while(have_posts()): the_post(); ?>  
 
         <?php
-        $hero_title = get_field("hero_title");
-        $hero_text = get_field("hero_text");        
-        $hero_img = get_field("hero_img");
-        $hero_btn = get_field("hero_btn");
+          $hero_title = get_field("hero_title");
+          $hero_text = get_field("hero_text");        
+          $hero_img = get_field("hero_img");
+          $hero_btn = get_field("hero_btn");
 
-        $title_men = get_field("title_men");
-        $text_men = get_field("text_men");
-        $img_men = get_field("img_men");
-        $btn_men = get_field("btn_men");
-        $title_women = get_field("title_women");
-        $text_women = get_field("text_women");
-        $img_women = get_field("img_women"); 
-        $btn_women = get_field("btn_women");   
+          $title_men = get_field("title_men");
+          $text_men = get_field("text_men");
+          $img_men = get_field("img_men");
+          $btn_men = get_field("btn_men");
+          $subpage_men_link = get_field("subpage_men_link");                
 
-        $process_section_title = get_field("process_section_title");
-        $process_section_text = get_field("process_section_text");
-        $process_btn = get_field("process_btn");
+          $title_women = get_field("title_women");
+          $text_women = get_field("text_women");
+          $img_women = get_field("img_women"); 
+          $btn_women = get_field("btn_women");   
+          $subpage_women_link = get_field("subpage_women_link");
 
-        $about_title = get_field("about_title");
-        $about_text = get_field("about_text");
-        $about_video = get_field("about_video");
-        $about_btn = get_field("about_btn");
+          $process_section_title = get_field("process_section_title");
+          $process_section_text = get_field("process_section_text");
+          $process_btn = get_field("process_btn");
 
-        $faq_title = get_field("faq_title");
-        $faq_text = get_field("faq_text"); 
+          $about_title = get_field("about_title");
+          $about_text = get_field("about_text");
+          $about_video = get_field("about_video");
+          $about_btn = get_field("about_btn");
+          $subpage_about_link = get_field("subpage_about_link");
 
-        $add_img = get_field("add_img");
-        $add_text = get_field("add_text");
+          $faq_title = get_field("faq_title");
+          $faq_text = get_field("faq_text"); 
 
-        $journal_title = get_field("journal_title");
-        $journal_text = get_field("journal_text"); 
+          $add_img = get_field("add_img");
+          $add_text = get_field("add_text");
 
-        $insta_btn = get_field("insta_btn")
+          $journal_title = get_field("journal_title");
+          $journal_text = get_field("journal_text"); 
+
+          $insta_btn = get_field("insta_btn")
         ?>
 
         <!-- HERO SECTION -->
@@ -71,7 +75,7 @@
                     </div>
                     <div class="absolute">
                       <p><?php echo $text_men; ?></p>
-                      <p><a href="<?php echo esc_url(get_permalink(get_page_by_path("men"))); ?>" class="btn-secondary"><?php echo $btn_men; ?></a></p>
+                      <p><a href="<?php echo esc_url(get_permalink(get_page_by_path($subpage_men_link))); ?>" class="btn-secondary"><?php echo $btn_men; ?></a></p>
                     </div>
                   </div>
                 </div>
@@ -93,7 +97,7 @@
                     <div class="absolute col-lg-6">
                       <p><?php echo $text_women; ?></p>
                                               
-                      <p><a href="<?php echo esc_url(get_permalink(get_page_by_path("women"))); ?>" class="btn-secondary"><?php echo $btn_women; ?></a></p>
+                      <p><a href="<?php echo esc_url(get_permalink(get_page_by_path($subpage_women_link))); ?>" class="btn-secondary"><?php echo $btn_women; ?></a></p>
                     </div>
                   </div>
                 </div>
@@ -149,7 +153,7 @@
               <div class="col-lg-7 d-flex flex-column justify-content-center">
                 <h2><?php echo $about_title; ?></h2>
                 <p><?php echo $about_text; ?></p>
-                <a href="<?php echo esc_url(get_permalink(get_page_by_path("about"))); ?>" class="btn-secondary"><?php echo $about_btn; ?><i class="bi bi-chevron-right ms-2"></i></a>
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path($subpage_about_link))); ?>" class="btn-secondary"><?php echo $about_btn; ?><i class="bi bi-chevron-right ms-2"></i></a>
               </div>
             </div>
           </div>          

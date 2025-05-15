@@ -7,14 +7,14 @@
     <?php if(have_posts()): ?>
         <?php while(have_posts()): the_post(); ?>
             <?php
-            $presentation_title = get_field("presentation_title");
-            $presentation_text = get_field("presentation_text");
-            $presentation_img = get_field("presentation_img");
-            $care_section_title = get_field("care_section_title");
-            $approach_title = get_field("approach_title");
-            $approach_text = get_field("approach_text");
-            $approach_img = get_field("approach_img");
-            $approach_btn = get_field("approach_btn");            
+                $presentation_title = get_field("presentation_title");
+                $presentation_text = get_field("presentation_text");
+                $presentation_img = get_field("presentation_img");
+                $care_section_title = get_field("care_section_title");
+                $approach_title = get_field("approach_title");
+                $approach_text = get_field("approach_text");
+                $approach_img = get_field("approach_img");
+                $approach_btn = get_field("approach_btn");            
             ?>
 
             <!--PRESENTATION-->

@@ -9,9 +9,9 @@
     <?php if(have_posts()): ?>
         <?php while(have_posts()): the_post(); ?>
             <?php
-            $title_women_page = get_field("title_women_page");
-            $description_women_page = get_field("description_women_page");
-            $women_btn = get_field("women_btn");                        
+                $title_women_page = get_field("title_women_page");
+                $description_women_page = get_field("description_women_page");
+                $women_btn = get_field("women_btn");                        
             ?>
 
             <div class="container py-5">
@@ -29,8 +29,8 @@
                                     <?php while($imgWomenPictureLoop->have_posts()): $imgWomenPictureLoop->the_post(); ?>
 
                                         <?php                                      
-                                        $img_women_page = get_field("img_women_page");
-                                        $text_img_women_page = get_field("text_img_women_page");         
+                                            $img_women_page = get_field("img_women_page");
+                                            $text_img_women_page = get_field("text_img_women_page");         
                                         ?>                                
 
                                         <figure class="portfolio-item">

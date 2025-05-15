@@ -9,10 +9,10 @@
     <?php if(have_posts()): ?>
         <?php while(have_posts()): the_post(); ?>
         <?php
-        $title_cost = get_field("title_cost");
-        $text_cost = get_field("text_cost"); 
-        $img_add_pricing = get_field("img_add_pricing");  
-        $add_btn = get_field("add_btn");                           
+            $title_cost = get_field("title_cost");
+            $text_cost = get_field("text_cost"); 
+            $img_add_pricing = get_field("img_add_pricing");  
+            $add_btn = get_field("add_btn");                           
         ?>
 
         <section class="section-cost">
@@ -36,9 +36,9 @@
                                 <?php while($priceLoop->have_posts()): $priceLoop->the_post(); ?>
 
                                     <?php
-                                    $item_title = get_field("item_title");
-                                    $item_price = get_field("item_price");
-                                    $post_id = get_the_ID(); // unque ID for each post
+                                        $item_title = get_field("item_title");
+                                        $item_price = get_field("item_price");
+                                        $post_id = get_the_ID(); // unque ID for each post
                                     ?>
 
                                     <div class="accordion-item">

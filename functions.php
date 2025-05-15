@@ -70,21 +70,16 @@ function custom_single_language_switcher() {
         'raw' => 1,
         'hide_if_empty' => 0,
         'show_flags' => 1,
-        'show_names' => 0
+        'show_names' => 1
     ));
 
-    $current_lang = pll_current_language(); // 'en' or 'fr'
-    $flag_url = get_template_directory_uri() . "/img/" . $current_lang . ".png";
+    foreach ($languages as $lang) {
+        if (!$lang['current_lang']) {
+            $flag_url = get_template_directory_uri() . "/img/" . $lang['slug'] . ".png";
 
-    if ($languages && count($languages) == 2) {
-        foreach ($languages as $lang) {
-            if (!$lang['current_lang']) {
-                // Mostrar solo la bandera del idioma que NO está activo
-                echo '<a href="' . esc_url($lang['url']) . '" class="switch-language">';
-                // echo $lang['flag'];
-                echo '<img src="' . esc_url($flag_url) . '" alt="' . esc_attr($current_lang) . '">';
-                echo '</a>';
-            }
+            echo '<a href="' . esc_url($lang['url']) . '" class="switch-language">';
+            echo '<img src="' . esc_url($flag_url) . '" alt="' . $lang['slug'] . '">';
+            echo '</a>';
         }
     }
 }

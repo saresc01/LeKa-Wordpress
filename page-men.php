@@ -9,9 +9,9 @@
     <?php if(have_posts()): ?>
         <?php while(have_posts()): the_post(); ?>
             <?php
-            $title_men_page = get_field("title_men_page");
-            $description_men_page = get_field("description_men_page");
-            $men_btn = get_field("men_btn");
+                $title_men_page = get_field("title_men_page");
+                $description_men_page = get_field("description_men_page");
+                $men_btn = get_field("men_btn");
             ?>
 
             <div class="container py-5">

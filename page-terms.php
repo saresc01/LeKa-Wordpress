@@ -9,8 +9,8 @@
     <?php if(have_posts()): ?>
         <?php while(have_posts()): the_post(); ?>
             <?php
-            $cond_text = get_field("cond_text");
-            $cond_title = get_field("cond_title");           
+                $cond_text = get_field("cond_text");
+                $cond_title = get_field("cond_title");           
             ?>
 
             <div class="container py-5">

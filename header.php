@@ -25,16 +25,16 @@
               <?php while($link_navbarLoop->have_posts()): $link_navbarLoop->the_post() ?>
 
               <?php
-              $subpage_men = get_field("subpage_men");
-              $subpage_women = get_field("subpage_women");
-              $subpage_pricing = get_field("subpage_pricing");
-              $subpage_about = get_field("subpage_about");
-              $subpage_contacts = get_field("subpage_contacts");
-              $subpage_men_link = get_field("subpage_men_link");
-              $subpage_women_link = get_field("subpage_women_link");
-              $subpage_pricing_link = get_field("subpage_pricing_link");
-              $subpage_about_link = get_field("subpage_about_link");
-              $subpage_contact_link = get_field("subpage_contact_link");
+                $subpage_men = get_field("subpage_men");
+                $subpage_women = get_field("subpage_women");
+                $subpage_pricing = get_field("subpage_pricing");
+                $subpage_about = get_field("subpage_about");
+                $subpage_contacts = get_field("subpage_contacts");
+                $subpage_men_link = get_field("subpage_men_link");
+                $subpage_women_link = get_field("subpage_women_link");
+                $subpage_pricing_link = get_field("subpage_pricing_link");
+                $subpage_about_link = get_field("subpage_about_link");
+                $subpage_contact_link = get_field("subpage_contact_link");
               ?>
 
               <!-- Logo -->

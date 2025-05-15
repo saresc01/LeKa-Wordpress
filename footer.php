@@ -4,34 +4,33 @@
 <footer class="bg-main pt-5 pb-4 footer-section">
 
       <?php 
-      $linkfooterLoop = new WP_Query(array(
-        "post_type" => "linkfooter",
-        "posts_per_page" => 1
-      ));
-      ?>
+        $linkfooterLoop = new WP_Query(array(
+          "post_type" => "linkfooter",
+          "posts_per_page" => 1
+        )); ?>
 
       <?php if($linkfooterLoop->have_posts()): ?>
         <?php while($linkfooterLoop->have_posts()): $linkfooterLoop->the_post() ?>
 
         <?php
-        $subpage_men = get_field("subpage_men");
-        $subpage_women = get_field("subpage_women");
-        $subpage_pricing = get_field("subpage_pricing");
-        $subpage_about = get_field("subpage_about");
-        $subpage_contacts = get_field("subpage_contacts");
+          $subpage_men = get_field("subpage_men");
+          $subpage_women = get_field("subpage_women");
+          $subpage_pricing = get_field("subpage_pricing");
+          $subpage_about = get_field("subpage_about");
+          $subpage_contacts = get_field("subpage_contacts");
 
-        $newsletter_title = get_field("newsletter_title");       
+          $newsletter_title = get_field("newsletter_title");       
 
-        $terms = get_field("terms");
-        $privacy_policy = get_field("privacy_policy");
+          $terms = get_field("terms");
+          $privacy_policy = get_field("privacy_policy");
 
-        $subpage_men_link = get_field("subpage_men_link");
-        $subpage_women_link = get_field("subpage_women_link");
-        $subpage_pricing_link = get_field("subpage_pricing_link");
-        $subpage_about_link = get_field("subpage_about_link");
-        $subpage_contact_link = get_field("subpage_contact_link");
-        $terms_link = get_field("terms_and_conditions_link");
-        $privacy_link = get_field("privacy_link");
+          $subpage_men_link = get_field("subpage_men_link");
+          $subpage_women_link = get_field("subpage_women_link");
+          $subpage_pricing_link = get_field("subpage_pricing_link");
+          $subpage_about_link = get_field("subpage_about_link");
+          $subpage_contact_link = get_field("subpage_contact_link");
+          $terms_link = get_field("terms_and_conditions_link");
+          $privacy_link = get_field("privacy_link");
         ?>
 
         <div class="container footer-container">
@@ -99,9 +98,7 @@
     <?php if($modalLoop->have_posts()): ?>
         <?php while($modalLoop->have_posts()): $modalLoop->the_post(); ?>
 
-        <?php
-        $modal_title = get_field("modal_title");
-        ?>
+        <?php $modal_title = get_field("modal_title"); ?>
 
         <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">

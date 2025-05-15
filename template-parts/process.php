@@ -7,9 +7,9 @@
         <?php while($processLoop->have_posts()): $processLoop->the_post(); ?>
 
             <?php                                      
-            $icon_process= get_field("icon_process");
-            $title_process = get_field("title_process"); 
-            $text_process = get_field("text_process");          
+                $icon_process= get_field("icon_process");
+                $title_process = get_field("title_process"); 
+                $text_process = get_field("text_process");          
             ?>                                
 
             <div class="timeline-step d-flex px-3">

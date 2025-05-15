@@ -7,22 +7,22 @@
     <?php if(have_posts()): ?>
         <?php while(have_posts()): the_post(); ?>
             <?php
-            $contact_page_title = get_field("contact_page_title");
-            $contact_img = get_field("contact_img");
-            $contact_text = get_field("contact_text");
-            $phone_title = get_field("phone_title");
-            $contact_phone = get_field("contact_phone");
-            $email_title = get_field("email_title");
-            $contact_email = get_field("contact_email");
-            $address_title = get_field("address_title");
-            $contact_address = get_field("contact_address");
-            $consultation_form = get_field("consultation_form");
-            $facebook = get_field("facebook");
-            $instagram = get_field("instagram");
-            $consultation_btn = get_field("consultation_btn"); // FORM BUTTON
+                $contact_page_title = get_field("contact_page_title");
+                $contact_img = get_field("contact_img");
+                $contact_text = get_field("contact_text");
+                $phone_title = get_field("phone_title");
+                $contact_phone = get_field("contact_phone");
+                $email_title = get_field("email_title");
+                $contact_email = get_field("contact_email");
+                $address_title = get_field("address_title");
+                $contact_address = get_field("contact_address");
+                $consultation_form = get_field("consultation_form");
+                $facebook = get_field("facebook");
+                $instagram = get_field("instagram");
+                $consultation_btn = get_field("consultation_btn"); // FORM BUTTON
 
-            $circle_text_add = get_field("circle_text_add");
-            $img_add_contact = get_field("img_add_contact");
+                $circle_text_add = get_field("circle_text_add");
+                $img_add_contact = get_field("img_add_contact");
             ?>
 
             <!--FREE CONSULTATION-->

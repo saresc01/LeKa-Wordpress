@@ -7,9 +7,9 @@
         <?php while($faqLoop->have_posts()): $faqLoop->the_post(); ?>
 
             <?php                                      
-            $question = get_field("question");
-            $answer = get_field("answer"); 
-            $faq_id = get_the_ID();         
+                $question = get_field("question");
+                $answer = get_field("answer"); 
+                $faq_id = get_the_ID();         
             ?>                                
 
             <div class="accordion-faqs-item">

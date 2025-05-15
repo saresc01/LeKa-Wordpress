@@ -1,11 +1,11 @@
 <?php 
-    $location_img = get_field("location_img");
-    $email_title = get_field("email_title");
-    $email = get_field("email");    
-    $phone_title = get_field("phone_title");       
-    $phone = get_field("phone");   
-    $street_title = get_field("street_title"); 
-    $street = get_field("street");        
+  $location_img = get_field("location_img");
+  $email_title = get_field("email_title");
+  $email = get_field("email");    
+  $phone_title = get_field("phone_title");       
+  $phone = get_field("phone");   
+  $street_title = get_field("street_title"); 
+  $street = get_field("street");        
 ?>
 
 <section class="section-location">
