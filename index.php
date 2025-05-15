@@ -5,8 +5,7 @@
 
         <?php
         $hero_title = get_field("hero_title");
-        $hero_text = get_field("hero_text");
-        //$hero_video = get_field("hero_video");
+        $hero_text = get_field("hero_text");        
         $hero_img = get_field("hero_img");
         $hero_btn = get_field("hero_btn");
 
