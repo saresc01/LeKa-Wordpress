@@ -683,6 +683,14 @@ footer {
 }
 
 /* SECTION: TESTIMONIALS, MAIN PAGE --------------------------------------------------------------------------------------------------------------------------------------- */
+.testimonials-section {
+  background-color: var(--c-l-grey);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
 
 /* SECTION: WHERE, MAIN PAGE ---------------------------------------------------------------------------------------------------------------------------------------------- */
 .contact-img {
@@ -706,7 +714,7 @@ footer {
 
 .section-location {
   margin-top: 3rem;
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 /* SECTION: INSTAGRAM, MAIN PAGE--------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -1366,6 +1374,15 @@ footer {
 
   .h2-journal{
     margin-bottom: 0rem;
+  }
+
+  /* SECTION: TESTIMONIALS, MAIN PAGE --------------------------------- */
+  .testimonials-section {
+    background-color: var(--c-l-grey);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 
   /*subpage contact us----------------------------------*/

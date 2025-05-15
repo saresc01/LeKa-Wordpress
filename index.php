@@ -216,6 +216,11 @@
         <!--END OUR JOURNAL-->
     
         <!--TESTIMONIALS-->
+        <section class="testimonials-section">     
+          <div class="container">
+            <?php echo do_shortcode('[trustindex no-registration=google]'); ?>
+          </div>             
+        </section>
 
         <!--END TESTIMONIALS-->        
 
