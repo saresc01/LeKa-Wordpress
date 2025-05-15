@@ -414,7 +414,7 @@ footer {
 .hero-text {
   color: var(--c-white);
 }
-
+/* SECTION MEN-WOMEN, main page------------------------------------------------------------------------------*/
 .section-men-main {
   margin-top: 1rem;
   padding: 1rem 0;
@@ -441,13 +441,13 @@ footer {
   align-items: center;
 }
 
-.half-text {
+/*.half-text {
   padding: 20px;
-}
+}*/
 
-.desc {
+/*.desc {
   padding: 20px;
-}
+}*/
 
 .top h2 {
   font-size: 2rem;
@@ -490,6 +490,14 @@ footer {
   padding-top: 4rem;  
   margin-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.img-horiz {
+  transition: transform 0.3s ease;
+}
+
+.text-wrapper:hover .img-horiz {    
+  transform: scale(0.95); 
 }
 
 /* Section: PROCESS, MAIN PAGE ----------------------------------------------------------------------------------------------------------------------------------- */
@@ -1415,7 +1423,7 @@ footer {
       right: 0;
       transform: translateY(-50%);
       max-width: 58%;
-    }
+    }/*test*/
 
     .discover-entry .desc .top {
       transform: translateY(50%);
@@ -1619,5 +1627,7 @@ footer {
 .switch-language:hover img {
     transform: scale(1.1);
 }
+
+
 
 

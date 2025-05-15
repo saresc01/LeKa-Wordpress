@@ -43,13 +43,7 @@
         <!-- HERO SECTION -->
         <section class="hero d-flex align-items-center section-first ">
           <div class="video-background">
-            <img src="<?php echo $hero_img["url"]; ?>" alt=""class="video-background-content">
-
-
-            <!-- <video autoplay muted loop class="video-background-content">
-              <source src="<?php echo $hero_video['url']; ?>" type="video/mp4">
-              Your browser does not support the video element.
-            </video> -->
+            <img src="<?php echo $hero_img["url"]; ?>" alt=""class="video-background-content">            
           </div>
           <div class="container">
             <div class="row">
@@ -65,20 +59,20 @@
 
         <!--FOR MEN-WOMEN SECTION-->
         <section class="men-women">
-          <div class="container px-0 discover-entry">
+          <div class="container discover-entry">
             <div class="row no-gutters d-md-flex justify-content-start text-wrapper row-men-women">
               <!--imagen-->
-              <div class="col-md-7 img-horiz" style="background-image: url('<?php echo $img_men["url"]; ?>');"></div>
+              <div class="col-md-8 img-horiz" style="background-image: url('<?php echo $img_men["url"]; ?>');"></div>
               <!--text-->
               <div class="one-half half-text d-flex justify-content-end align-items-center">
-                <div class="text-2 align-items-start d-flex">
-                  <div class="desc pt-5 ">
+                <div class="text-2 align-items-start d-flex col-md-6">
+                  <div class="desc pt-5">
                     <div class="top">
                       <h1 class="mb-4"><?php echo $title_men; ?></h1>
                     </div>
                     <div class="absolute">
                       <p><?php echo $text_men; ?></p>
-                      <p><a href="<?php echo esc_url(get_permalink(get_page_by_path("hommes"))); ?>" class="btn-secondary"><?php echo $btn_men; ?></a></p>
+                      <p><a href="<?php echo esc_url(get_permalink(get_page_by_path("men"))); ?>" class="btn-secondary"><?php echo $btn_men; ?></a></p>
                     </div>
                   </div>
                 </div>
@@ -86,10 +80,10 @@
             </div>
           </div>          
 
-          <div class="container px-0 discover-entry">
+          <div class="container discover-entry">
             <div class="row no-gutters d-md-flex justify-content-end text-wrapper row-men-women">
               <!--imagen-->
-              <div class="col-md-7 img-horiz" style="background-image: url('<?php echo $img_women["url"]; ?>');"></div>
+              <div class="col-md-8 img-horiz" style="background-image: url('<?php echo $img_women["url"]; ?>');"></div>
               <!--text-->
               <div class="one-half half-text d-flex justify-content-end align-items-center">
                 <div class="text-3 align-items-center d-flex">
@@ -109,7 +103,7 @@
           </div> 
                    
         </section>
-        <!--END FOR MEN-WOMEN SECTION-->    
+        <!--END FOR MEN-WOMEN SECTION-->
 
         <!--PROCESS-->
         <?php 
